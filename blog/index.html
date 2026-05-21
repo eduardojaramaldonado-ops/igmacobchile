@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- NOINDEX en subdominio de prueba -->
+    <script>
+        (function(){
+            if(location.hostname === 'prueba.igmacobchile.cl'){
+                var existing = document.querySelector('meta[name="robots"]');
+                if(existing) existing.remove();
+                var m = document.createElement('meta');
+                m.name = 'robots';
+                m.content = 'noindex, nofollow';
+                document.head.appendChild(m);
+            }
+        })();
+    </script>
+
+    <!-- SEO -->
+    <title>Blog - Igmacob</title>
+    <link rel="canonical" href="https://igmacobchile.cl/blog/" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Blog - Igmacob" />
+    <meta property="og:url" content="https://igmacobchile.cl/blog/" />
+    <meta property="og:site_name" content="Igmacob Chile" />
+    <meta property="og:updated_time" content="2026-01-28T19:17:10+00:00" />
+    <meta property="og:image" content="https://igmacobchile.cl/wp-content/uploads/2024/11/vitaly-gariev-3EUgUg4e3nE-unsplash.jpg" />
+    <meta property="og:image:secure_url" content="https://igmacobchile.cl/wp-content/uploads/2024/11/vitaly-gariev-3EUgUg4e3nE-unsplash.jpg" />
+    <meta property="og:image:width" content="748" />
+    <meta property="og:image:height" content="446" />
+    <meta property="og:image:alt" content="Blog" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blog - Igmacob" />
+    <meta name="twitter:image" content="https://igmacobchile.cl/wp-content/uploads/2024/11/vitaly-gariev-3EUgUg4e3nE-unsplash.jpg" />
+    <meta name="twitter:label1" content="Tiempo de lectura" />
+    <meta name="twitter:data1" content="Menos de un minuto" />
+    <script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://igmacobchile.cl/#person","name":"Igmacob","logo":{"@type":"ImageObject","@id":"https://igmacobchile.cl/#logo","url":"https://igmacobchile.cl/wp-content/uploads/2024/10/logo.png","contentUrl":"https://igmacobchile.cl/wp-content/uploads/2024/10/logo.png","caption":"Igmacob Chile","inLanguage":"es-CL","width":"464","height":"173"},"image":{"@type":"ImageObject","@id":"https://igmacobchile.cl/#logo","url":"https://igmacobchile.cl/wp-content/uploads/2024/10/logo.png","contentUrl":"https://igmacobchile.cl/wp-content/uploads/2024/10/logo.png","caption":"Igmacob Chile","inLanguage":"es-CL","width":"464","height":"173"}},{"@type":"WebSite","@id":"https://igmacobchile.cl/#website","url":"https://igmacobchile.cl","name":"Igmacob Chile","publisher":{"@id":"https://igmacobchile.cl/#person"},"inLanguage":"es-CL"},{"@type":"ImageObject","@id":"https://igmacobchile.cl/wp-content/uploads/2024/11/vitaly-gariev-3EUgUg4e3nE-unsplash.jpg","url":"https://igmacobchile.cl/wp-content/uploads/2024/11/vitaly-gariev-3EUgUg4e3nE-unsplash.jpg","width":"748","height":"446","inLanguage":"es-CL"},{"@type":"BreadcrumbList","@id":"https://igmacobchile.cl/blog/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://igmacobchile.cl","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://igmacobchile.cl/blog/","name":"Blog"}}]},{"@type":"WebPage","@id":"https://igmacobchile.cl/blog/#webpage","url":"https://igmacobchile.cl/blog/","name":"Blog - Igmacob","datePublished":"2024-12-30T12:17:47+00:00","dateModified":"2026-01-28T19:17:10+00:00","isPartOf":{"@id":"https://igmacobchile.cl/#website"},"primaryImageOfPage":{"@id":"https://igmacobchile.cl/wp-content/uploads/2024/11/vitaly-gariev-3EUgUg4e3nE-unsplash.jpg"},"inLanguage":"es-CL","breadcrumb":{"@id":"https://igmacobchile.cl/blog/#breadcrumb"}},{"@type":"Person","@id":"https://igmacobchile.cl/author/seo/","name":"admin","url":"https://igmacobchile.cl/author/seo/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/7af7825441ed017a3e2b8a1cef1fe0c26de63a091960994e832b5bf4a1ebc426?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/7af7825441ed017a3e2b8a1cef1fe0c26de63a091960994e832b5bf4a1ebc426?s=96&amp;d=mm&amp;r=g","caption":"admin","inLanguage":"es-CL"},"sameAs":["https://igmacobchile.cl"]},{"@type":"Article","headline":"Blog - Igmacob","keywords":"Blog","datePublished":"2024-12-30T12:17:47+00:00","dateModified":"2026-01-28T19:17:10+00:00","author":{"@id":"https://igmacobchile.cl/author/seo/","name":"admin"},"publisher":{"@id":"https://igmacobchile.cl/#person"},"name":"Blog - Igmacob","@id":"https://igmacobchile.cl/blog/#richSnippet","isPartOf":{"@id":"https://igmacobchile.cl/blog/#webpage"},"image":{"@id":"https://igmacobchile.cl/wp-content/uploads/2024/11/vitaly-gariev-3EUgUg4e3nE-unsplash.jpg"},"inLanguage":"es-CL","mainEntityOfPage":{"@id":"https://igmacobchile.cl/blog/#webpage"}}]}</script>
+
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="https://igmacobchile.cl/wp-content/uploads/2024/10/fav-150x150.png" sizes="32x32">
+    <link rel="icon" href="https://igmacobchile.cl/wp-content/uploads/2024/10/fav-300x300.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://igmacobchile.cl/wp-content/uploads/2024/10/fav-300x300.png">
+
+    <!-- GOOGLE SITE VERIFICATION -->
+    <meta name="google-site-verification" content="xo1vOvm4MS7vNaSN-45VyKRhwneFpvFgBP8rer7VtMg">
+
+    <!-- GOOGLE FONT INTER -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css?v=15">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="container header-container">
+
+            <a href="../index.html" class="logo">
+                <img src="../assets/img/2024/10/logo.png" alt="Igmacob Chile">
+            </a>
+
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-links">
+
+                    <li class="has-dropdown">
+                        <a href="../cobranza-prejudicial.html">
+                            Servicio Integral de Cobranza
+                            <i class="fa-solid fa-chevron-down nav-arrow"></i>
+                        </a>
+                        <ul class="dropdown">
+                            <li class="has-subdropdown">
+                                <a href="../cobranza-prejudicial.html">
+                                    Cobranza Prejudicial
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                                <ul class="subdropdown">
+                                    <li><a href="../cobranza-preventiva.html">Cobranza Preventiva</a></li>
+                                    <li><a href="../cobranza-castigo.html">Cobranza Castigo</a></li>
+                                    <li><a href="../cobranza-de-facturas.html">Cobranza de Facturas</a></li>
+                                    <li><a href="../cobranza-previsional.html">Cobranza Previsional</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../cobranza-judicial.html">Cobranza Judicial</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-dropdown">
+                        <a href="../servicios-call-center.html">
+                            Servicios de Call Center
+                            <i class="fa-solid fa-chevron-down nav-arrow"></i>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="../fidelizacion-de-clientes.html">Fidelización de Clientes</a></li>
+                            <li><a href="../telemarketing.html">Telemarketing</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../mundo-pymes.html">Mundo Pymes</a></li>
+                    <li><a href="./">Blog</a></li>
+
+                    <li>
+                        <a href="../contacto.html" class="btn-cotizar">Solicitar Cotización</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- HERO INTERNO -->
+
+    <section class="hero-interno">
+        <div class="container hero-interno-inner">
+            <div class="hero-interno-text">
+                <ol class="breadcrumb">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li>Blog</li>
+                </ol>
+                <h1>Blog Igmacob</h1>
+                <p>Consejos, noticias y recursos para empresas y PYMEs sobre cobranza, finanzas y gestión comercial en Chile.</p>
+            </div>
+            <div class="hero-interno-img-card">
+                <img src="../assets/img/2025/01/contact-center.webp" alt="Blog Igmacob Chile">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENIDO BLOG -->
+
+    <section class="blog-contenido">
+        <div class="container">
+
+            <!-- FILTROS -->
+            <div class="blog-filters">
+                <button class="blog-filter-btn active" data-filter="all">Todos</button>
+                <button class="blog-filter-btn" data-filter="cobranza">Cobranza</button>
+                <button class="blog-filter-btn" data-filter="facturas">Facturas</button>
+                <button class="blog-filter-btn" data-filter="pymes">PYMEs</button>
+                <button class="blog-filter-btn" data-filter="legal">Legal</button>
+                <button class="blog-filter-btn" data-filter="call-center">Call Center</button>
+                <button class="blog-filter-btn" data-filter="previsional">Previsional</button>
+                <button class="blog-filter-btn" data-filter="fidelizacion">Fidelización</button>
+                <button class="blog-filter-btn" data-filter="sectores">Sectores</button>
+            </div>
+
+            <div class="blog-grid">
+
+                <!-- 01 -->
+                <article class="blog-card" data-category="cobranza">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/07/cobranza-prejudicial-en-Chile.webp" alt="Cobranza Prejudicial en Chile">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Cobranza</span>
+                        <h2><a href="cobranza-prejudicial/">¿Qué es la cobranza prejudicial y cuándo aplicarla?</a></h2>
+                        <p>Cómo la gestión extrajudicial recupera deudas de forma más rápida y económica que la vía judicial, y en qué situaciones es la mejor opción para tu empresa.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Julio 2025</span>
+                            <a href="cobranza-prejudicial/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 02 -->
+                <article class="blog-card" data-category="cobranza">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/02/psicologia-de-la-cobranza.webp" alt="Psicología de la Cobranza">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Cobranza</span>
+                        <h2><a href="psicologia-de-la-cobranza/">Psicología de la cobranza: cómo persuadir sin presionar</a></h2>
+                        <p>Entender el comportamiento del deudor es clave para recuperar sin dañar la relación comercial. Técnicas que usan los expertos.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Febrero 2025</span>
+                            <a href="psicologia-de-la-cobranza/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 03 -->
+                <article class="blog-card" data-category="cobranza">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/02/Comunicacion-Efectiva-para-Cobrar-una-Deuda.webp" alt="Comunicación efectiva para cobrar">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Cobranza</span>
+                        <h2><a href="comunicacion-efectiva/">Comunicación efectiva para cobrar una deuda sin conflictos</a></h2>
+                        <p>El tono, el canal y el momento adecuados marcan la diferencia entre recuperar el pago o perder al cliente para siempre.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Febrero 2025</span>
+                            <a href="comunicacion-efectiva/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 04 -->
+                <article class="blog-card" data-category="facturas">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/01/Estrategias-para-el-cobro-de-facturas.webp" alt="Estrategias para cobrar facturas">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Facturas</span>
+                        <h2><a href="como-cobrar-facturas-impagas/">Estrategias para el cobro efectivo de facturas impagas</a></h2>
+                        <p>Desde el primer recordatorio hasta la acción legal: el paso a paso que siguen las empresas más exitosas para gestionar sus cuentas por cobrar.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Enero 2025</span>
+                            <a href="como-cobrar-facturas-impagas/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 05 -->
+                <article class="blog-card" data-category="cobranza">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/05/cobranza-preventiva.webp" alt="Cobranza Preventiva">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Cobranza</span>
+                        <h2><a href="estrategias-de-cobranza-preventiva/">Cobranza preventiva: cómo evitar la morosidad antes de que ocurra</a></h2>
+                        <p>Implementar procesos de cobranza preventiva puede reducir drásticamente la morosidad. Conoce las herramientas que usan las empresas líderes.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Mayo 2025</span>
+                            <a href="estrategias-de-cobranza-preventiva/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 06 -->
+                <article class="blog-card" data-category="pymes">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/05/recordatorio-de-pago.webp" alt="Recordatorio de pago">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">PYMEs</span>
+                        <h2><a href="recordatorios-de-pago/">Cómo redactar un recordatorio de pago profesional y efectivo</a></h2>
+                        <p>El lenguaje correcto en un recordatorio de pago puede aumentar la tasa de respuesta hasta un 40%. Aprende las mejores prácticas.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Mayo 2025</span>
+                            <a href="recordatorios-de-pago/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 07 -->
+                <article class="blog-card" data-category="pymes">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/05/cuentas-por-cobrar-de-las-pymes.webp" alt="Cuentas por cobrar pymes">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">PYMEs</span>
+                        <h2><a href="cuentas-por-cobrar/">Gestión de cuentas por cobrar para PYMEs: guía práctica</a></h2>
+                        <p>Una mala gestión de cuentas por cobrar puede asfixiar el flujo de caja de cualquier PYME. Te mostramos cómo optimizarla.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Mayo 2025</span>
+                            <a href="cuentas-por-cobrar/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 08 -->
+                <article class="blog-card" data-category="previsional">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/04/deudas-previsionales.webp" alt="Deudas Previsionales">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Previsional</span>
+                        <h2><a href="deudas-por-servicios-medicos/">Morosidad previsional: riesgos, multas y cómo regularizarse</a></h2>
+                        <p>El incumplimiento de cotizaciones previsionales puede generar multas cuantiosas y sanciones legales. Te explicamos cómo regularizar tu situación.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Abril 2025</span>
+                            <a href="deudas-por-servicios-medicos/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 09 -->
+                <article class="blog-card" data-category="call-center">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/04/contact-center-para-empresas.webp" alt="Contact Center para empresas">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Call Center</span>
+                        <h2><a href="servicio-de-contact-center/">Contact center para empresas: qué es y por qué lo necesitas</a></h2>
+                        <p>Un contact center bien gestionado mejora la experiencia del cliente, aumenta conversiones y reduce costos operativos.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Abril 2025</span>
+                            <a href="servicio-de-contact-center/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10 -->
+                <article class="blog-card" data-category="facturas">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/07/Morosidad-en-el-pago-de-facturas.webp" alt="Morosidad en pago de facturas">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Facturas</span>
+                        <h2><a href="morosidad/">Morosidad en el pago de facturas: causas y cómo enfrentarla</a></h2>
+                        <p>La morosidad impacta directamente el flujo de caja y la rentabilidad. Identifica las causas más comunes y las estrategias para reducirla.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Julio 2025</span>
+                            <a href="morosidad/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 11 -->
+                <article class="blog-card" data-category="cobranza">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/07/Ejecutivo-de-cobranza-externo.webp" alt="Ejecutivo de cobranza externo">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Cobranza</span>
+                        <h2><a href="ejecutivo-de-cobranzas/">Ejecutivo de cobranza externo: ventajas de externalizar la gestión</a></h2>
+                        <p>Externalizar la cobranza con profesionales especializados permite a tu empresa enfocarse en el negocio principal mientras se recuperan los impagos.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Julio 2025</span>
+                            <a href="ejecutivo-de-cobranzas/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 12 -->
+                <article class="blog-card" data-category="legal">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/07/Ley-marco-de-ciberseguridad-en-Chile.webp" alt="Ley Marco de Ciberseguridad Chile">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Legal</span>
+                        <h2><a href="ley-marco-de-ciberseguridad/">Ley Marco de Ciberseguridad en Chile: lo que toda empresa debe saber</a></h2>
+                        <p>La nueva normativa de ciberseguridad impone obligaciones a empresas que manejan datos personales. Conoce cómo impacta tu negocio.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Julio 2025</span>
+                            <a href="ley-marco-de-ciberseguridad/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 13 -->
+                <article class="blog-card" data-category="cobranza">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/08/cobranza-extrajudicial.webp" alt="Cobranza Extrajudicial">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Cobranza</span>
+                        <h2><a href="cobranza-extrajudicial/">Cobranza extrajudicial: la vía más eficiente para recuperar deudas</a></h2>
+                        <p>Antes de llegar a los tribunales, existe una etapa extrajudicial que puede resolver la mayoría de los impagos con menor costo y tiempo.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Agosto 2025</span>
+                            <a href="cobranza-extrajudicial/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 14 -->
+                <article class="blog-card" data-category="call-center">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/09/Prospeccion-Comercial.webp" alt="Prospección Comercial">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Call Center</span>
+                        <h2><a href="proveedores/">Prospección comercial para PYMEs: cómo encontrar nuevos clientes</a></h2>
+                        <p>La prospección efectiva es el motor del crecimiento comercial. Descubre las técnicas modernas que funcionan en el mercado chileno.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Septiembre 2025</span>
+                            <a href="proveedores/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 15 -->
+                <article class="blog-card" data-category="call-center">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/09/telemarketing-inteligente.webp" alt="Telemarketing Inteligente">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Call Center</span>
+                        <h2><a href="atencion-al-cliente/">Telemarketing inteligente: 5 claves para una campaña exitosa en Chile</a></h2>
+                        <p>Las campañas telefónicas siguen siendo altamente efectivas cuando se ejecutan con estrategia, datos y cumplimiento normativo SERNAC.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Septiembre 2025</span>
+                            <a href="atencion-al-cliente/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 16 -->
+                <article class="blog-card" data-category="cobranza">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/09/Deudas-Comerciales.webp" alt="Deudas Comerciales">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Cobranza</span>
+                        <h2><a href="deudas-comerciales/">Deudas comerciales: cómo proteger a tu empresa de clientes morosos</a></h2>
+                        <p>Los impagos entre empresas son más frecuentes de lo que parecen. Conoce los mecanismos legales y preventivos para proteger tu patrimonio.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Septiembre 2025</span>
+                            <a href="deudas-comerciales/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 17 -->
+                <article class="blog-card" data-category="legal">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/10/que-es-cobranza-judicial.webp" alt="Qué es cobranza judicial">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Legal</span>
+                        <h2><a href="que-es-cobranza-judicial/">¿Qué es la cobranza judicial? Todo lo que necesitas saber</a></h2>
+                        <p>Entender los plazos, costos y etapas del proceso judicial puede marcar la diferencia entre recuperar o perder definitivamente una deuda.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Octubre 2025</span>
+                            <a href="que-es-cobranza-judicial/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 18 -->
+                <article class="blog-card" data-category="pymes">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/10/como-cobrar-sin-perder-clientes.webp" alt="Cómo cobrar sin perder clientes">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">PYMEs</span>
+                        <h2><a href="como-cobrar/">Cómo cobrar lo que te deben sin perder a tu cliente</a></h2>
+                        <p>Facturas impagas no tienen por qué arruinar relaciones comerciales. Conoce las mejores prácticas para cobrar con tacto y eficiencia.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Octubre 2025</span>
+                            <a href="como-cobrar/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 19 -->
+                <article class="blog-card" data-category="legal">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/10/convenio-de-pago-de-deuda.webp" alt="Convenio de pago de deuda">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Legal</span>
+                        <h2><a href="convenios-de-pago/">Convenio de pago: cómo negociar deudas comerciales paso a paso</a></h2>
+                        <p>Un buen convenio de pago protege a ambas partes. Te explicamos qué debe incluir y cómo redactarlo correctamente.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Octubre 2025</span>
+                            <a href="convenios-de-pago/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 20 -->
+                <article class="blog-card" data-category="cobranza">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/10/Outsoursing-de-Cobranza.webp" alt="Outsourcing de Cobranza">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Cobranza</span>
+                        <h2><a href="outsourcing-de-cobranza/">Outsourcing de cobranza: cuándo y por qué externalizar este proceso</a></h2>
+                        <p>Empresas que externalizan su cobranza recuperan hasta un 35% más en comparación con equipos internos. Descubre por qué.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Octubre 2025</span>
+                            <a href="outsourcing-de-cobranza/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 21 -->
+                <article class="blog-card" data-category="legal">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/10/Procedimiento-ejecutivo-de-cobranza.webp" alt="Procedimiento ejecutivo de cobranza">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Legal</span>
+                        <h2><a href="procedimiento-ejecutivo/">Procedimiento ejecutivo de cobranza: etapas y plazos en Chile</a></h2>
+                        <p>El juicio ejecutivo es la herramienta legal más eficaz para cobrar documentos como cheques, pagarés y letras. Conoce cada etapa.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Octubre 2025</span>
+                            <a href="procedimiento-ejecutivo/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 22 -->
+                <article class="blog-card" data-category="fidelizacion">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/11/Fidelizacion-de-clientes.webp" alt="Fidelización de clientes">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Fidelización</span>
+                        <h2><a href="fidelizacion-de-clientes-blog/">Fidelización de clientes: cómo reducir la fuga en tu empresa</a></h2>
+                        <p>Retener un cliente cuesta hasta 5 veces menos que captar uno nuevo. Aprende las tácticas que más funcionan para PYMEs chilenas.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Noviembre 2025</span>
+                            <a href="fidelizacion-de-clientes-blog/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 23 -->
+                <article class="blog-card" data-category="pymes">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/11/Flujo-de-caja.webp" alt="Flujo de caja">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">PYMEs</span>
+                        <h2><a href="flujo-de-caja/">Flujo de caja: cómo mantenerlo positivo cuando tus clientes no pagan</a></h2>
+                        <p>El flujo de caja es el oxígeno de cualquier empresa. Una gestión proactiva de cobranza es clave para mantenerlo saludable.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Noviembre 2025</span>
+                            <a href="flujo-de-caja/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 24 -->
+                <article class="blog-card" data-category="sectores">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/11/Cobranza-de-Colegiaturas.webp" alt="Cobranza de Colegiaturas">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Sectores</span>
+                        <h2><a href="colegiaturas/">Cobranza de colegiaturas: estrategias para instituciones educativas</a></h2>
+                        <p>Colegios y universidades enfrentan desafíos únicos en la recuperación de matrículas y aranceles. Te mostramos cómo gestionarlo.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Noviembre 2025</span>
+                            <a href="colegiaturas/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 25 -->
+                <article class="blog-card" data-category="facturas">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/11/Facturas-impagas.webp" alt="Facturas impagas">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Facturas</span>
+                        <h2><a href="facturas-impagas/">Facturas impagas: guía completa para recuperar tu dinero</a></h2>
+                        <p>Cada día que pasa sin cobrar una factura vencida reduce las probabilidades de recuperación. Aquí te explicamos qué hacer y cuándo actuar.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Noviembre 2025</span>
+                            <a href="facturas-impagas/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 26 -->
+                <article class="blog-card" data-category="cobranza">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/12/gestion-de-cobranza.webp" alt="Gestión de cobranza">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Cobranza</span>
+                        <h2><a href="gestion-de-cobranza/">Gestión de cobranza profesional: métricas clave para medir resultados</a></h2>
+                        <p>Tasa de recuperación, días de mora y contactabilidad son indicadores que toda empresa debe monitorear. Te explicamos cómo interpretarlos.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Diciembre 2025</span>
+                            <a href="gestion-de-cobranza/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 27 -->
+                <article class="blog-card" data-category="pymes">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/12/liquidez-de-una-empresa.webp" alt="Liquidez de empresa">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">PYMEs</span>
+                        <h2><a href="liquidez-de-una-empresa/">Liquidez empresarial: cómo la cobranza eficiente protege tus finanzas</a></h2>
+                        <p>Sin liquidez no hay operaciones. Descubre cómo una estrategia de cobranza bien estructurada puede salvar a tu empresa de una crisis financiera.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Diciembre 2025</span>
+                            <a href="liquidez-de-una-empresa/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 28 -->
+                <article class="blog-card" data-category="legal">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2026/01/Ley-21320.webp" alt="Ley 21320">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Legal</span>
+                        <h2><a href="ley-21-320/">Ley 21.320 de cobranza en Chile: lo que todo acreedor debe saber</a></h2>
+                        <p>La Ley 21.320 regula las prácticas de cobranza en Chile y establece derechos claros para deudores. Conoce qué está permitido y qué no.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Enero 2026</span>
+                            <a href="ley-21-320/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 29 -->
+                <article class="blog-card" data-category="cobranza">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2026/01/empresas-de-cobranza-en-santiago.webp" alt="Empresas de cobranza en Santiago">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Cobranza</span>
+                        <h2><a href="empresas-de-cobranza-en-santiago/">Empresas de cobranza en Santiago: cómo elegir la mejor para tu negocio</a></h2>
+                        <p>No todas las empresas de cobranza son iguales. Te damos los criterios clave para seleccionar al socio que realmente recupere tus cuentas.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Enero 2026</span>
+                            <a href="empresas-de-cobranza-en-santiago/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 30 -->
+                <article class="blog-card" data-category="cobranza">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2026/02/cobranza-digital.webp" alt="Cobranza digital">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Cobranza</span>
+                        <h2><a href="cobranza-digital/">Cobranza digital: el futuro de la recuperación de deudas en Chile</a></h2>
+                        <p>WhatsApp, correo automatizado y portales de pago online están transformando la forma de cobrar. Conoce las herramientas más efectivas.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Febrero 2026</span>
+                            <a href="cobranza-digital/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 31 -->
+                <article class="blog-card" data-category="cobranza">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2026/02/gestion-de-mora-de-las-empresas.webp" alt="Gestión de mora">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Cobranza</span>
+                        <h2><a href="gestion-de-mora/">Gestión de mora en empresas: estrategias para cada etapa de la deuda</a></h2>
+                        <p>La mora temprana, media y tardía requieren estrategias distintas. Una gestión segmentada puede multiplicar tu tasa de recuperación.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Febrero 2026</span>
+                            <a href="gestion-de-mora/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 32 -->
+                <article class="blog-card" data-category="legal">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2026/02/juicio-ejecutivo.webp" alt="Juicio ejecutivo">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Legal</span>
+                        <h2><a href="juicio-ejecutivo/">Juicio ejecutivo en Chile: guía completa para empresas acreedoras</a></h2>
+                        <p>El juicio ejecutivo es el mecanismo legal más rápido para cobrar documentos mercantiles. Conoce sus plazos, costos y probabilidades de éxito.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Febrero 2026</span>
+                            <a href="juicio-ejecutivo/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 33 -->
+                <article class="blog-card" data-category="pymes">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2026/02/cartera-de-clientes.webp" alt="Cartera de clientes">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">PYMEs</span>
+                        <h2><a href="cartera-de-clientes/">Cartera de clientes: cómo segmentarla para mejorar la cobranza</a></h2>
+                        <p>No todos los clientes morosos son iguales. Una segmentación inteligente de tu cartera permite priorizar esfuerzos y maximizar la recuperación.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Febrero 2026</span>
+                            <a href="cartera-de-clientes/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 34 -->
+                <article class="blog-card" data-category="cobranza">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2026/03/deudas-comerciales-en-chile.webp" alt="Deudas comerciales en Chile">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Cobranza</span>
+                        <h2><a href="deudas-comerciales-en-chile/">Deudas comerciales en Chile: panorama 2026 y cómo prepararse</a></h2>
+                        <p>El escenario económico impacta directamente en el comportamiento de pago de las empresas. Analizamos las tendencias y cómo adaptarse.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Marzo 2026</span>
+                            <a href="deudas-comerciales-en-chile/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="container footer-grid">
+
+                <div class="footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <img src="../assets/img/2024/11/logo-blanco.png" alt="Igmacob Chile">
+                    </a>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col-title">¿Necesitas más información?</h4>
+                    <a href="mailto:comercial@igmacob.cl" class="footer-email">comercial@igmacob.cl</a>
+                    <ul class="footer-contact-list">
+                        <li>Padre Mariano 391 Oficina 707<br>Providencia – Santiago</li>
+                        <li>Teléfono: <a href="tel:+56232012663">+(56) 232012663</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Navegación:</h4>
+                    <ul class="footer-links">
+                        <li><a href="../cobranza-prejudicial.html">Servicio Integral de Cobranza</a></li>
+                        <li><a href="../servicios-call-center.html">Servicios de Call Center</a></li>
+                        <li><a href="../mundo-pymes.html">Mundo Pymes</a></li>
+                        <li><a href="./">Blog</a></li>
+                        <li><a href="#contacto">Solicitar Cotización</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Seguinos en redes:</h4>
+                    <div class="footer-socials">
+                        <a href="https://www.linkedin.com/company/igmacob-chile/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/igmacob_chile/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://wa.me/56940218122" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>&copy; 2025 Igmacob Chile. Todos los derechos reservados.</p>
+                <p>Diseñado por <a href="#" target="_blank" rel="noopener">GoPoint Agency</a></p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        const filterBtns = document.querySelectorAll('.blog-filter-btn');
+        const cards = document.querySelectorAll('.blog-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                cards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = '';
+                        card.style.animation = 'fadeIn 0.3s ease';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
