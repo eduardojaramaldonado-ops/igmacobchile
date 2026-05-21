@@ -164,7 +164,7 @@ body{
     text-align:left;
 }
 
-.slide-content h1{
+.slide-content h2{
     font-family:'Montserrat', 'Inter', sans-serif;
     font-size:46px;
     line-height:1.05;
@@ -209,7 +209,7 @@ body{
         padding:0 20px;
     }
 
-    .slide-content h1{
+    .slide-content h2{
         font-size:42px;
     }
 
@@ -227,7 +227,7 @@ body{
         padding-right:20px;
     }
 
-    .slide-content h1{
+    .slide-content h2{
         font-size:32px;
         line-height:1.1;
     }
@@ -327,7 +327,7 @@ body{
     text-align:center;
 }
 
-.servicios-head span{
+.servicios-head h1{
     display:inline-block;
     margin-bottom:18px;
     color:#09ace5;
