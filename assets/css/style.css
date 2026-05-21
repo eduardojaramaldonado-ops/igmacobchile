@@ -166,10 +166,10 @@ body{
 
 .slide-content h1{
     font-family:'Montserrat', 'Inter', sans-serif;
-    font-size:52px;
+    font-size:46px;
     line-height:1.05;
     color:#ffffff;
-    max-width:1000px;
+    max-width:1100px;
     margin-bottom:25px;
     font-weight:600;
     text-shadow:0 5px 15px rgba(0,0,0,0.3);
