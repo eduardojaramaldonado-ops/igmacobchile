@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- NOINDEX en subdominio de prueba -->
+    <script>
+        (function(){
+            if(location.hostname === 'prueba.igmacobchile.cl'){
+                var existing = document.querySelector('meta[name="robots"]');
+                if(existing) existing.remove();
+                var m = document.createElement('meta');
+                m.name = 'robots';
+                m.content = 'noindex, nofollow';
+                document.head.appendChild(m);
+            }
+        })();
+    </script>
     <title>Gestión de mora en empresas: estrategias para cada etapa de la deuda | Blog Igmacob Chile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
