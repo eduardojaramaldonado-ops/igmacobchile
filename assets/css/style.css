@@ -1764,9 +1764,9 @@ body{
     position:absolute;
     inset:0;
     background:linear-gradient(135deg,
-        rgba(0,0,129,0.75) 0%,
-        rgba(9,172,229,0.55) 60%,
-        rgba(0,223,114,0.45) 100%);
+        rgba(0,0,40,0.88) 0%,
+        rgba(0,0,80,0.82) 50%,
+        rgba(9,80,140,0.78) 100%);
     z-index:1;
 }
 
