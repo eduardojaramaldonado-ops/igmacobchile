@@ -13,7 +13,7 @@
 $destinatario  = 'comercial@igmacob.cl';
 $from_email    = 'no-reply@igmacobchile.cl';   // debe existir como casilla o alias en cPanel
 $from_nombre   = 'Igmacob Chile Web';
-$gracias_url   = 'https://prueba.igmacobchile.cl/gracias.html';
+$gracias_url   = 'https://prueba.igmacobchile.cl/gracias/';
 // Cuando se migre el dominio, cambiar a: 'https://igmacobchile.cl/gracias.html'
 // ----------------------------
 
