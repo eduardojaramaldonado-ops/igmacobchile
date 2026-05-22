@@ -206,26 +206,28 @@
             <div class="landing-sidebar" id="landing-form">
                 <div class="landing-form-box">
                     <h3>Solicita más información</h3>
-                    <form class="landing-form">
+                    <form class="landing-form" action="https://igmacobchile.cl/enviar.php" method="POST">
+                        <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
+                        <input type="hidden" name="origen" value="servicios-call-center.html">
                         <div class="form-group">
                             <label>Nombre:</label>
-                            <input type="text" placeholder="Ingresa tu nombre">
+                            <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
                         </div>
                         <div class="form-group">
                             <label>Email:</label>
-                            <input type="email" placeholder="Ingresa tu email">
+                            <input type="email" name="email" placeholder="Ingresa tu email" required>
                         </div>
                         <div class="form-group">
                             <label>Teléfono o WhatsApp:</label>
-                            <input type="tel" placeholder="Ingresa tu número de teléfono">
+                            <input type="tel" name="telefono" placeholder="Ingresa tu número de teléfono">
                         </div>
                         <div class="form-group">
                             <label>Mensaje:</label>
-                            <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
+                            <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
                         </div>
                         <div class="form-group">
                             <label>Cómo nos conoció:</label>
-                            <select>
+                            <select name="conoce">
                                 <option value="">Selecciona una opción</option>
                                 <option value="google">Google</option>
                                 <option value="linkedin">LinkedIn</option>

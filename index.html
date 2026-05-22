@@ -587,26 +587,28 @@
 
             <div class="contacto-form-box">
 
-                <form class="contacto-form">
+                <form class="contacto-form" action="https://igmacobchile.cl/enviar.php" method="POST">
+                    <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
+                        <input type="hidden" name="origen" value="index.html">
 
                     <div class="form-group">
                         <label>Nombre:</label>
-                        <input type="text" placeholder="Ingresa tu nombre">
+                        <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
                     </div>
 
                     <div class="form-group">
                         <label>Email:</label>
-                        <input type="email" placeholder="Ingresa tu email">
+                        <input type="email" name="email" placeholder="Ingresa tu email" required>
                     </div>
 
                     <div class="form-group">
                         <label>Teléfono o WhatsApp:</label>
-                        <input type="text" placeholder="Ingresa tu número de teléfono">
+                        <input type="text" name="telefono" placeholder="Ingresa tu número de teléfono">
                     </div>
 
                     <div class="form-group">
                         <label>Mensaje:</label>
-                        <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
                     </div>
 
                     <button type="submit">
