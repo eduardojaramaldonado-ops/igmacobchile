@@ -2478,12 +2478,12 @@ body{
 }
 
 .landing-bloque ul li{
-    display:flex;
-    align-items:flex-start;
-    gap:12px;
+    position:relative;
+    padding-left:28px;
     font-size:15px;
     color:#3a3d4a;
-    line-height:1.55;
+    line-height:1.6;
+    margin-bottom:8px;
 }
 
 .landing-bloque ul li::before{
@@ -2491,9 +2491,10 @@ body{
     font-family:"Font Awesome 6 Free";
     font-weight:900;
     color:#09ace5;
-    flex-shrink:0;
-    margin-top:2px;
     font-size:15px;
+    position:absolute;
+    left:0;
+    top:5px;
 }
 
 .landing-bloque .btn-wsp{
