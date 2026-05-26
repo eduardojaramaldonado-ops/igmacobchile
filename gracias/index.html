@@ -32,63 +32,305 @@
     <link rel="stylesheet" href="../assets/css/style.css?v=18">
 
     <style>
-        .gracias-wrap{
-            min-height:calc(100vh - 120px);
-            display:flex;
+        /* ===== HERO DE GRACIAS ===== */
+        .gracias-hero{
+            position:relative;
+            padding:120px 20px 80px;
+            background:linear-gradient(135deg,#000081 0%,#09ace5 60%,#00df72 100%);
+            text-align:center;
+            color:#ffffff;
+            overflow:hidden;
+        }
+        .gracias-hero::before,
+        .gracias-hero::after{
+            content:'';
+            position:absolute;
+            border-radius:50%;
+            opacity:0.15;
+            background:#ffffff;
+        }
+        .gracias-hero::before{
+            width:400px;height:400px;top:-150px;right:-100px;
+        }
+        .gracias-hero::after{
+            width:300px;height:300px;bottom:-120px;left:-80px;
+        }
+        .gracias-hero-inner{
+            position:relative;
+            z-index:2;
+            max-width:680px;
+            margin:0 auto;
+        }
+        .gracias-check{
+            width:110px;height:110px;
+            border-radius:50%;
+            background:#ffffff;
+            color:#00b96b;
+            display:inline-flex;
             align-items:center;
             justify-content:center;
-            padding:120px 20px 80px;
+            font-size:56px;
+            margin-bottom:32px;
+            box-shadow:0 20px 50px rgba(0,0,0,0.2);
+            animation:gracias-pop 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+        }
+        @keyframes gracias-pop{
+            0%{transform:scale(0.4);opacity:0;}
+            70%{transform:scale(1.08);}
+            100%{transform:scale(1);opacity:1;}
+        }
+        .gracias-check.error{
+            background:#fff;
+            color:#ff5d5d;
+        }
+        .gracias-hero h1{
+            font-family:'Montserrat','Inter',sans-serif;
+            font-size:48px;
+            font-weight:700;
+            margin-bottom:18px;
+            line-height:1.15;
+        }
+        .gracias-hero p.subtitle{
+            font-size:19px;
+            line-height:1.6;
+            opacity:0.95;
+            max-width:560px;
+            margin:0 auto;
+        }
+
+        /* ===== PASOS ===== */
+        .gracias-pasos{
+            padding:80px 20px;
+            background:#f7f9fc;
+        }
+        .gracias-pasos-grid{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:30px;
+            max-width:1100px;
+            margin:0 auto;
+        }
+        .gracias-paso{
+            background:#fff;
+            border-radius:18px;
+            padding:36px 30px;
             text-align:center;
+            box-shadow:0 8px 30px rgba(0,0,129,0.06);
+            border:1px solid rgba(0,0,129,0.05);
+            transition:0.3s;
         }
-        .gracias-box{
-            max-width:640px;
+        .gracias-paso:hover{
+            transform:translateY(-4px);
+            box-shadow:0 12px 35px rgba(0,0,129,0.10);
         }
-        .gracias-icon{
-            width:96px;
-            height:96px;
+        .gracias-paso-num{
+            width:48px;height:48px;
             border-radius:50%;
             background:linear-gradient(90deg,#09ace5,#00df72);
             color:#fff;
             display:inline-flex;
             align-items:center;
             justify-content:center;
-            font-size:42px;
-            margin-bottom:28px;
-            box-shadow:0 12px 30px rgba(9,172,229,0.25);
+            font-weight:700;
+            font-size:18px;
+            margin-bottom:20px;
         }
-        .gracias-icon.error{
-            background:linear-gradient(90deg,#ff5d5d,#ff8c42);
-            box-shadow:0 12px 30px rgba(255,93,93,0.25);
-        }
-        .gracias-box h1{
-            font-family:'Montserrat','Inter',sans-serif;
-            font-size:40px;
+        .gracias-paso h3{
+            font-size:18px;
             font-weight:700;
             color:#000081;
-            margin-bottom:18px;
-            line-height:1.2;
+            margin-bottom:10px;
         }
-        .gracias-box p{
-            font-size:18px;
+        .gracias-paso p{
+            font-size:14.5px;
             color:#5f6470;
-            margin-bottom:32px;
+            line-height:1.55;
+            margin:0;
+        }
+        .gracias-pasos-titulo{
+            text-align:center;
+            margin-bottom:50px;
+        }
+        .gracias-pasos-titulo span{
+            color:#09ace5;
+            font-size:13px;
+            font-weight:700;
+            letter-spacing:1px;
+            text-transform:uppercase;
+            display:inline-block;
+            margin-bottom:14px;
+        }
+        .gracias-pasos-titulo h2{
+            font-family:'Montserrat','Inter',sans-serif;
+            font-size:36px;
+            font-weight:700;
+            color:#000081;
+            margin:0;
+        }
+
+        /* ===== CTA WhatsApp ===== */
+        .gracias-urgente{
+            padding:60px 20px;
+            text-align:center;
+        }
+        .gracias-urgente-box{
+            max-width:720px;
+            margin:0 auto;
+            padding:40px 36px;
+            background:linear-gradient(135deg,rgba(9,172,229,0.08),rgba(0,223,114,0.08));
+            border:1px solid rgba(9,172,229,0.15);
+            border-radius:20px;
+        }
+        .gracias-urgente h3{
+            font-family:'Montserrat','Inter',sans-serif;
+            font-size:26px;
+            font-weight:700;
+            color:#000081;
+            margin-bottom:12px;
+        }
+        .gracias-urgente p{
+            font-size:16px;
+            color:#5f6470;
+            margin-bottom:28px;
             line-height:1.6;
         }
-        .gracias-cta{
+        .gracias-wsp-btn{
             display:inline-flex;
             align-items:center;
-            gap:10px;
-            padding:16px 32px;
+            gap:12px;
+            padding:16px 36px;
             background:linear-gradient(90deg,#09ace5,#00df72);
             color:#fff;
-            border-radius:12px;
+            border-radius:14px;
             text-decoration:none;
             font-weight:700;
+            font-size:16px;
+            box-shadow:0 10px 25px rgba(0,223,114,0.25);
             transition:0.3s;
         }
-        .gracias-cta:hover{
+        .gracias-wsp-btn:hover{
             transform:translateY(-3px);
             background:linear-gradient(90deg,#00df72,#09ace5);
+            box-shadow:0 14px 30px rgba(0,223,114,0.35);
+        }
+        .gracias-wsp-btn i{
+            font-size:22px;
+        }
+
+        /* ===== Lecturas sugeridas ===== */
+        .gracias-lectura{
+            padding:80px 20px;
+            background:#f7f9fc;
+        }
+        .gracias-lectura-grid{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:28px;
+            max-width:1100px;
+            margin:0 auto;
+        }
+        .lectura-card{
+            background:#fff;
+            border-radius:16px;
+            overflow:hidden;
+            box-shadow:0 8px 30px rgba(0,0,129,0.06);
+            transition:0.3s;
+            border:1px solid rgba(0,0,129,0.05);
+        }
+        .lectura-card:hover{
+            transform:translateY(-5px);
+            box-shadow:0 14px 36px rgba(0,0,129,0.12);
+        }
+        .lectura-card img{
+            width:100%;
+            height:170px;
+            object-fit:cover;
+            display:block;
+        }
+        .lectura-card-body{
+            padding:22px 22px 26px;
+        }
+        .lectura-tag{
+            display:inline-block;
+            padding:4px 12px;
+            background:linear-gradient(90deg,#09ace5,#00df72);
+            color:#fff;
+            border-radius:8px;
+            font-size:11px;
+            font-weight:700;
+            letter-spacing:0.5px;
+            text-transform:uppercase;
+            margin-bottom:12px;
+        }
+        .lectura-card h3{
+            font-size:17px;
+            font-weight:700;
+            color:#000081;
+            line-height:1.35;
+            margin-bottom:10px;
+        }
+        .lectura-card h3 a{
+            color:inherit;
+            text-decoration:none;
+        }
+        .lectura-card h3 a:hover{
+            color:#09ace5;
+        }
+        .lectura-card p{
+            font-size:14px;
+            color:#5f6470;
+            line-height:1.55;
+            margin-bottom:14px;
+        }
+        .lectura-card .lectura-link{
+            font-size:14px;
+            font-weight:700;
+            color:#09ace5;
+            text-decoration:none;
+            display:inline-flex;
+            align-items:center;
+            gap:6px;
+        }
+        .lectura-card .lectura-link:hover{
+            gap:10px;
+        }
+
+        /* ===== Volver al home ===== */
+        .gracias-volver{
+            text-align:center;
+            padding:40px 20px 80px;
+        }
+        .gracias-volver a{
+            color:#000081;
+            text-decoration:none;
+            font-weight:600;
+            display:inline-flex;
+            align-items:center;
+            gap:8px;
+        }
+        .gracias-volver a:hover{
+            color:#09ace5;
+        }
+
+        /* ===== Responsive ===== */
+        @media(max-width:768px){
+            .gracias-hero h1{ font-size:34px; }
+            .gracias-hero p.subtitle{ font-size:16px; }
+            .gracias-pasos-grid,
+            .gracias-lectura-grid{
+                grid-template-columns:1fr;
+            }
+            .gracias-pasos-titulo h2{ font-size:28px; }
+            .gracias-check{ width:90px;height:90px;font-size:44px; }
+        }
+
+        /* ===== Estado de ERROR (cuando viene ?error=...) ===== */
+        body.has-error .gracias-hero{
+            background:linear-gradient(135deg,#7a1f1f 0%,#c0392b 60%,#e67e22 100%);
+        }
+        body.has-error .gracias-pasos,
+        body.has-error .gracias-lectura{
+            display:none;
         }
     </style>
 
@@ -96,21 +338,182 @@
 
 <body>
 
+    <!-- HEADER -->
     <header class="header">
         <div class="container header-container">
             <a href="../" class="logo">
                 <img src="../assets/img/2024/10/logo.png" alt="Igmacob Chile">
             </a>
+            <div class="menu-toggle"><span></span><span></span><span></span></div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li class="has-dropdown">
+                        <a href="../cobranza-prejudicial/">Servicio Integral de Cobranza <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                        <ul class="dropdown">
+                            <li class="has-subdropdown">
+                                <a href="../cobranza-prejudicial/">Cobranza Prejudicial <i class="fa-solid fa-chevron-right"></i></a>
+                                <ul class="subdropdown">
+                                    <li><a href="../cobranza-preventiva/">Cobranza Preventiva</a></li>
+                                    <li><a href="../cobranza-castigo/">Cobranza Castigo</a></li>
+                                    <li><a href="../cobranza-de-facturas/">Cobranza de Facturas</a></li>
+                                    <li><a href="../cobranza-previsional/">Cobranza Previsional</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../cobranza-judicial/">Cobranza Judicial</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="../servicios-call-center/">Servicios de Call Center <i class="fa-solid fa-chevron-down nav-arrow"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="../fidelizacion-de-clientes/">Fidelización de Clientes</a></li>
+                            <li><a href="../telemarketing/">Telemarketing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../mundo-pymes/">Mundo Pymes</a></li>
+                    <li><a href="../blog/">Blog</a></li>
+                    <li><a href="../contacto/" class="btn-cotizar">Solicitar Cotización</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main class="gracias-wrap">
-        <div class="gracias-box" id="gracias-content">
-            <!-- contenido inyectado por JS según el query string -->
+    <!-- HERO -->
+    <section class="gracias-hero">
+        <div class="gracias-hero-inner">
+            <div class="gracias-check" id="gracias-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h1 id="gracias-titulo">¡Recibimos tu consulta!</h1>
+            <p class="subtitle" id="gracias-subtitulo">
+                Gracias por contactarte con Igmacob Chile. Un asesor te responderá dentro de las próximas <strong>24 horas hábiles</strong>.
+            </p>
         </div>
-    </main>
+    </section>
 
+    <!-- QUE PASA AHORA - 3 PASOS -->
+    <section class="gracias-pasos">
+        <div class="gracias-pasos-titulo">
+            <span>QUÉ PASA AHORA</span>
+            <h2>Tu caso ya está en marcha</h2>
+        </div>
+        <div class="gracias-pasos-grid">
+            <div class="gracias-paso">
+                <div class="gracias-paso-num">1</div>
+                <h3>Recibimos tu mensaje</h3>
+                <p>Tu consulta llegó a nuestro equipo comercial y ya tiene asignado un ejecutivo responsable.</p>
+            </div>
+            <div class="gracias-paso">
+                <div class="gracias-paso-num">2</div>
+                <h3>Analizamos tu caso</h3>
+                <p>Evaluamos las características de tu cartera o consulta para preparar una propuesta a la medida.</p>
+            </div>
+            <div class="gracias-paso">
+                <div class="gracias-paso-num">3</div>
+                <h3>Te contactamos</h3>
+                <p>En menos de 24 horas hábiles te llamamos o escribimos para coordinar los próximos pasos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA WhatsApp por si es urgente -->
+    <section class="gracias-urgente">
+        <div class="gracias-urgente-box">
+            <h3>¿Es urgente?</h3>
+            <p>Si tu caso no puede esperar, escribinos directamente por WhatsApp y atendemos al instante en horario hábil.</p>
+            <a href="https://wa.me/56940218122?text=Hola,%20acabo%20de%20enviar%20una%20consulta%20por%20el%20sitio%20y%20necesito%20una%20respuesta%20urgente." target="_blank" rel="noopener" class="gracias-wsp-btn">
+                <i class="fa-brands fa-whatsapp"></i> Conversar por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- LECTURAS SUGERIDAS -->
+    <section class="gracias-lectura">
+        <div class="gracias-pasos-titulo">
+            <span>MIENTRAS ESPERÁS</span>
+            <h2>Contenido que te puede interesar</h2>
+        </div>
+        <div class="gracias-lectura-grid">
+
+            <article class="lectura-card">
+                <a href="../blog/cobranza-judicial-de-facturas-pymes/">
+                    <img src="../assets/img/2025/09/Cobro-Judicial-de-Facturas-de-Pymes.webp" alt="Cobranza judicial de facturas para PYMEs">
+                </a>
+                <div class="lectura-card-body">
+                    <span class="lectura-tag">Legal</span>
+                    <h3><a href="../blog/cobranza-judicial-de-facturas-pymes/">Cobranza Judicial de Facturas para PYMEs: cuándo y cómo iniciar el proceso</a></h3>
+                    <p>Cuándo conviene demandar, requisitos legales y errores comunes.</p>
+                    <a href="../blog/cobranza-judicial-de-facturas-pymes/" class="lectura-link">Leer artículo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="lectura-card">
+                <a href="../blog/cobranza-prejudicial/">
+                    <img src="../assets/img/2025/07/cobranza-prejudicial-en-Chile.webp" alt="Cobranza prejudicial en Chile">
+                </a>
+                <div class="lectura-card-body">
+                    <span class="lectura-tag">Cobranza</span>
+                    <h3><a href="../blog/cobranza-prejudicial/">¿Qué es la cobranza prejudicial y cuándo aplicarla?</a></h3>
+                    <p>Cómo recuperar deudas antes de llegar a la vía judicial, sin perder al cliente.</p>
+                    <a href="../blog/cobranza-prejudicial/" class="lectura-link">Leer artículo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="lectura-card">
+                <a href="../blog/flujo-de-caja/">
+                    <img src="../assets/img/2025/11/Flujo-de-caja.webp" alt="Flujo de caja para empresas">
+                </a>
+                <div class="lectura-card-body">
+                    <span class="lectura-tag">Finanzas</span>
+                    <h3><a href="../blog/flujo-de-caja/">Cómo proteger el flujo de caja de tu empresa</a></h3>
+                    <p>Estrategias prácticas para reducir mora y mantener liquidez sana.</p>
+                    <a href="../blog/flujo-de-caja/" class="lectura-link">Leer artículo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- VOLVER -->
+    <div class="gracias-volver">
+        <a href="../"><i class="fa-solid fa-arrow-left"></i> Volver al inicio</a>
+    </div>
+
+    <!-- FOOTER -->
     <footer class="footer">
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <div class="footer-brand">
+                    <a href="../" class="footer-logo"><img src="../assets/img/2024/11/logo-blanco.png" alt="Igmacob Chile"></a>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-col-title">¿Necesitas más información?</h4>
+                    <a href="mailto:comercial@igmacob.cl" class="footer-email">comercial@igmacob.cl</a>
+                    <ul class="footer-contact-list">
+                        <li>Padre Mariano 391 Oficina 707<br>Providencia – Santiago</li>
+                        <li>Teléfono: <a href="tel:+56232012663">+(56) 232012663</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Navegación:</h4>
+                    <ul class="footer-links">
+                        <li><a href="../cobranza-prejudicial/">Servicio Integral de Cobranza</a></li>
+                        <li><a href="../servicios-call-center/">Servicios de Call Center</a></li>
+                        <li><a href="../mundo-pymes/">Mundo Pymes</a></li>
+                        <li><a href="../blog/">Blog</a></li>
+                        <li><a href="../contacto/">Solicitar Cotización</a></li>
+                        <li><a href="../politicas-de-privacidad/">Políticas de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Seguinos en redes:</h4>
+                    <div class="footer-socials">
+                        <a href="https://www.linkedin.com/company/igmacob-chile/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/igmacob_chile/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/56940218122" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer-bottom">
             <div class="container footer-bottom-inner">
                 <p>&copy; 2025 Igmacob Chile. Todos los derechos reservados.</p>
@@ -119,47 +522,43 @@
         </div>
     </footer>
 
+    <!-- Script para manejar mensajes de error según query string -->
     <script>
         (function(){
             var qs = new URLSearchParams(location.search);
-            var ok = qs.get('ok');
             var error = qs.get('error');
-            var box = document.getElementById('gracias-content');
+            if(!error) return;
 
-            var messages = {
-                ok: {
-                    icon: 'fa-check',
-                    title: '¡Mensaje enviado!',
-                    text: 'Gracias por contactarte con Igmacob Chile. Nuestro equipo te responderá a la brevedad, generalmente dentro de las próximas 24 horas hábiles.',
-                    cls: ''
-                },
+            document.body.classList.add('has-error');
+            var icon = document.getElementById('gracias-icon');
+            var titulo = document.getElementById('gracias-titulo');
+            var subtitulo = document.getElementById('gracias-subtitulo');
+
+            var errores = {
                 campos: {
                     icon: 'fa-triangle-exclamation',
                     title: 'Faltan campos',
-                    text: 'Algunos campos obligatorios quedaron vacíos. Por favor, volvé al formulario y completalos.',
-                    cls: 'error'
+                    text: 'Algunos campos obligatorios quedaron vacíos. Por favor, volvé al formulario y completalos.'
                 },
                 email: {
                     icon: 'fa-envelope-circle-check',
                     title: 'Email inválido',
-                    text: 'El email que ingresaste no tiene un formato válido. Por favor, revisalo e intentá nuevamente.',
-                    cls: 'error'
+                    text: 'El email que ingresaste no tiene un formato válido. Revisalo e intentá nuevamente.'
                 },
                 server: {
                     icon: 'fa-server',
-                    title: 'Error en el servidor',
-                    text: 'Tuvimos un problema enviando el mensaje. Por favor, intentá de nuevo en unos minutos o escribinos por WhatsApp.',
-                    cls: 'error'
+                    title: 'Error temporal del servidor',
+                    text: 'Tuvimos un problema enviando tu mensaje. Por favor, intentá de nuevo en unos minutos o escribinos por WhatsApp.'
                 }
             };
 
-            var msg = ok ? messages.ok : (messages[error] || messages.ok);
+            var err = errores[error];
+            if(!err) return;
 
-            box.innerHTML =
-                '<div class="gracias-icon ' + msg.cls + '"><i class="fa-solid ' + msg.icon + '"></i></div>' +
-                '<h1>' + msg.title + '</h1>' +
-                '<p>' + msg.text + '</p>' +
-                '<a href="../" class="gracias-cta"><i class="fa-solid fa-arrow-left"></i> Volver al inicio</a>';
+            icon.classList.add('error');
+            icon.innerHTML = '<i class="fa-solid ' + err.icon + '"></i>';
+            titulo.textContent = err.title;
+            subtitulo.innerHTML = err.text;
         })();
     </script>
 
