@@ -2929,3 +2929,423 @@ body{
         font-size: 12px;
     }
 }
+
+/* =========================
+   LANDING COMERCIAL — SECCIONES
+========================= */
+
+/* Section title compartido */
+.section-titulo{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 56px;
+}
+.section-titulo .eyebrow{
+    display:inline-block;
+    color:#09ace5;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:14px;
+}
+.section-titulo h2{
+    font-family:'Montserrat','Inter',sans-serif;
+    font-size:40px;
+    line-height:1.15;
+    color:#000081;
+    font-weight:700;
+    margin:0 0 16px;
+}
+.section-titulo h2 strong{
+    background:linear-gradient(90deg,#09ace5,#00df72);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+.section-titulo p{
+    font-size:17px;
+    color:#5f6470;
+    line-height:1.6;
+    margin:0;
+}
+
+/* Beneficios grid */
+.beneficios-section{ padding:90px 0; background:#fff; }
+.beneficios-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+}
+.beneficio-card{
+    background:#f7f9fc;
+    border:1px solid rgba(0,0,129,0.06);
+    border-radius:18px;
+    padding:32px 26px;
+    text-align:center;
+    transition:0.3s;
+}
+.beneficio-card:hover{
+    transform:translateY(-4px);
+    background:#ffffff;
+    box-shadow:0 12px 30px rgba(0,0,129,0.10);
+    border-color:rgba(9,172,229,0.20);
+}
+.beneficio-icon{
+    width:64px;height:64px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#09ace5,#00df72);
+    color:#fff;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-size:26px;
+    margin-bottom:20px;
+}
+.beneficio-card h3{
+    font-size:17px;
+    font-weight:700;
+    color:#000081;
+    margin:0 0 10px;
+}
+.beneficio-card p{
+    font-size:14.5px;
+    color:#5f6470;
+    line-height:1.55;
+    margin:0;
+}
+
+/* Servicios destacados (cobranza preventiva + judicial) */
+.servicios-destacados{ padding:90px 0; background:#f7f9fc; }
+.servicios-destacados-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+.servicio-destacado{
+    position:relative;
+    background:#fff;
+    border-radius:20px;
+    padding:40px 36px;
+    box-shadow:0 8px 30px rgba(0,0,129,0.06);
+    border:1px solid rgba(0,0,129,0.05);
+    transition:0.3s;
+    overflow:hidden;
+}
+.servicio-destacado::before{
+    content:'';
+    position:absolute;
+    top:0;left:0;right:0;height:4px;
+    background:linear-gradient(90deg,#09ace5,#00df72);
+}
+.servicio-destacado:hover{
+    transform:translateY(-5px);
+    box-shadow:0 16px 40px rgba(0,0,129,0.12);
+}
+.servicio-destacado-tag{
+    display:inline-block;
+    padding:5px 14px;
+    background:linear-gradient(90deg,#09ace5,#00df72);
+    color:#fff;
+    border-radius:100px;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:0.5px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+.servicio-destacado h3{
+    font-family:'Montserrat','Inter',sans-serif;
+    font-size:24px;
+    font-weight:700;
+    color:#000081;
+    margin:0 0 14px;
+}
+.servicio-destacado > p{
+    font-size:15px;
+    color:#5f6470;
+    line-height:1.6;
+    margin:0 0 22px;
+}
+.servicio-destacado ul{
+    list-style:none;
+    padding:0;
+    margin:0 0 28px;
+}
+.servicio-destacado ul li{
+    position:relative;
+    padding-left:26px;
+    margin-bottom:10px;
+    font-size:14.5px;
+    color:#3a3d4a;
+    line-height:1.5;
+}
+.servicio-destacado ul li::before{
+    content:"\f00c";
+    font-family:"Font Awesome 6 Free";
+    font-weight:900;
+    color:#00df72;
+    position:absolute;left:0;top:3px;
+}
+.servicio-destacado-link{
+    color:#09ace5;
+    font-weight:700;
+    font-size:14.5px;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    transition:gap 0.3s;
+}
+.servicio-destacado-link:hover{ gap:10px; }
+
+/* Rubros atendidos */
+.rubros-section{ padding:90px 0; background:#fff; }
+.rubros-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+.rubro-card{
+    background:#fff;
+    border:2px solid rgba(0,0,129,0.06);
+    border-radius:14px;
+    padding:24px 18px;
+    text-align:center;
+    transition:0.3s;
+}
+.rubro-card:hover{
+    border-color:#09ace5;
+    transform:translateY(-3px);
+}
+.rubro-card i{
+    font-size:32px;
+    color:#09ace5;
+    margin-bottom:14px;
+    display:block;
+}
+.rubro-card h4{
+    font-size:14.5px;
+    font-weight:700;
+    color:#000081;
+    margin:0 0 6px;
+}
+.rubro-card p{
+    font-size:12.5px;
+    color:#5f6470;
+    margin:0;
+    line-height:1.4;
+}
+
+/* Proceso 4 pasos */
+.proceso-section{ padding:90px 0; background:#f7f9fc; }
+.proceso-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+    position:relative;
+}
+.proceso-paso{
+    background:#fff;
+    border-radius:16px;
+    padding:32px 24px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,129,0.06);
+    position:relative;
+}
+.proceso-paso-num{
+    width:42px;height:42px;
+    border-radius:50%;
+    background:linear-gradient(90deg,#09ace5,#00df72);
+    color:#fff;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:16px;
+    margin-bottom:18px;
+}
+.proceso-paso h4{
+    font-size:16px;
+    font-weight:700;
+    color:#000081;
+    margin:0 0 10px;
+}
+.proceso-paso p{
+    font-size:14px;
+    color:#5f6470;
+    margin:0;
+    line-height:1.55;
+}
+
+/* Casos de éxito */
+.casos-section{ padding:90px 0; background:#fff; }
+.casos-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+.caso-card{
+    background:linear-gradient(135deg,rgba(9,172,229,0.04),rgba(0,223,114,0.04));
+    border:1px solid rgba(9,172,229,0.15);
+    border-radius:18px;
+    padding:32px 28px;
+    transition:0.3s;
+}
+.caso-card:hover{
+    transform:translateY(-4px);
+    border-color:rgba(9,172,229,0.3);
+}
+.caso-card-tag{
+    display:inline-block;
+    padding:4px 12px;
+    background:#fff;
+    color:#09ace5;
+    border:1px solid rgba(9,172,229,0.3);
+    border-radius:100px;
+    font-size:11px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    margin-bottom:16px;
+}
+.caso-card .caso-monto{
+    font-family:'Montserrat','Inter',sans-serif;
+    font-size:32px;
+    font-weight:700;
+    background:linear-gradient(90deg,#09ace5,#00df72);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    margin-bottom:6px;
+    line-height:1;
+}
+.caso-card .caso-monto-label{
+    font-size:13px;
+    color:#5f6470;
+    margin-bottom:18px;
+}
+.caso-card h4{
+    font-size:16px;
+    font-weight:700;
+    color:#000081;
+    margin:0 0 10px;
+    line-height:1.35;
+}
+.caso-card p{
+    font-size:14px;
+    color:#5f6470;
+    line-height:1.55;
+    margin:0;
+}
+
+/* CTA Final */
+.cta-final{
+    padding:80px 20px;
+    background:linear-gradient(135deg,#000081 0%,#09ace5 60%,#00df72 100%);
+    text-align:center;
+    color:#fff;
+}
+.cta-final h2{
+    font-family:'Montserrat','Inter',sans-serif;
+    font-size:38px;
+    font-weight:700;
+    line-height:1.2;
+    margin:0 0 16px;
+    max-width:760px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.cta-final p{
+    font-size:18px;
+    line-height:1.55;
+    opacity:0.95;
+    max-width:620px;
+    margin:0 auto 32px;
+}
+.cta-final-buttons{
+    display:flex;
+    gap:16px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.cta-final .btn-primary{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:16px 32px;
+    background:#fff;
+    color:#000081;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+}
+.cta-final .btn-primary:hover{ transform:translateY(-3px); }
+.cta-final .btn-secondary{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:16px 32px;
+    background:transparent;
+    color:#fff;
+    border:2px solid #fff;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.3s;
+}
+.cta-final .btn-secondary:hover{
+    background:#fff;
+    color:#000081;
+}
+
+/* WhatsApp flotante */
+.floating-wsp{
+    position:fixed;
+    bottom:24px;
+    right:24px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25d366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 8px 24px rgba(37,211,102,0.4);
+    z-index:998;
+    transition:0.3s;
+    animation:wsp-pulse 2s infinite;
+}
+.floating-wsp:hover{
+    transform:scale(1.1);
+    background:#1ebe5d;
+}
+@keyframes wsp-pulse{
+    0%,100%{ box-shadow:0 8px 24px rgba(37,211,102,0.4); }
+    50%{ box-shadow:0 8px 24px rgba(37,211,102,0.4), 0 0 0 12px rgba(37,211,102,0.15); }
+}
+
+/* RESPONSIVE LANDINGS */
+@media(max-width:991px){
+    .beneficios-grid{ grid-template-columns:repeat(2,1fr); }
+    .servicios-destacados-grid{ grid-template-columns:1fr; }
+    .rubros-grid{ grid-template-columns:repeat(3,1fr); }
+    .proceso-grid{ grid-template-columns:repeat(2,1fr); }
+    .casos-grid{ grid-template-columns:1fr; }
+    .section-titulo h2{ font-size:32px; }
+    .cta-final h2{ font-size:30px; }
+}
+@media(max-width:600px){
+    .beneficios-section,.servicios-destacados,
+    .rubros-section,.proceso-section,.casos-section{ padding:60px 0; }
+    .beneficios-grid,.rubros-grid{ grid-template-columns:1fr; }
+    .proceso-grid{ grid-template-columns:1fr; }
+    .section-titulo h2{ font-size:26px; }
+    .cta-final h2{ font-size:24px; }
+    .cta-final p{ font-size:15px; }
+    .floating-wsp{ bottom:16px;right:16px;width:54px;height:54px;font-size:26px; }
+}
