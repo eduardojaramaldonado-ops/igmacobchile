@@ -4,6 +4,11 @@
 # Formato: <ruta-vieja> <ruta-nueva> <código>
 # ============================================================
 
+# --- LIMPIEZA DE URLs: /carpeta/index.html → /carpeta/ ---
+/index.html                                 /                                     301
+/*/index.html                               /:splat/                              301
+
+
 # --- LANDINGS PRINCIPALES (cambio de subcarpeta a raíz limpia) ---
 /prejudicial                                /cobranza-prejudicial/                301
 /prejudicial/                               /cobranza-prejudicial/                301
