@@ -6,20 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- NOINDEX en subdominio de prueba -->
-    <script>
-        (function(){
-            if(location.hostname === 'prueba.igmacobchile.cl'){
-                var existing = document.querySelector('meta[name="robots"]');
-                if(existing) existing.remove();
-                var m = document.createElement('meta');
-                m.name = 'robots';
-                m.content = 'noindex, nofollow';
-                document.head.appendChild(m);
-            }
-        })();
-    </script>
-
     <!-- SEO -->
     <title>Blog de Cobranza Inteligente para PYMEs y Empresas | Igmacob</title>
     <meta name="description" content="Artículos especializados sobre cobranza, gestión de cartera, recuperación de facturas impagas y atención al cliente para empresas y PYMEs en Chile.">
@@ -166,6 +152,22 @@
             </div>
 
             <div class="blog-grid">
+
+                <!-- NUEVO -->
+                <article class="blog-card" data-category="legal">
+                    <div class="blog-card-img">
+                        <img src="../assets/img/2025/09/Cobro-Judicial-de-Facturas-de-Pymes.webp" alt="Cobranza judicial de facturas para PYMEs">
+                    </div>
+                    <div class="blog-card-body">
+                        <span class="blog-tag">Legal</span>
+                        <h2><a href="cobranza-judicial-de-facturas-pymes/">Cobranza Judicial de Facturas para PYMEs: cuándo y cómo iniciar el proceso</a></h2>
+                        <p>Guía práctica para PYMEs chilenas sobre cobranza judicial de facturas: cuándo demandar, requisitos legales, mérito ejecutivo, costos y errores frecuentes.</p>
+                        <div class="blog-card-footer">
+                            <span class="blog-date"><i class="fa-regular fa-calendar"></i> Mayo 2026</span>
+                            <a href="cobranza-judicial-de-facturas-pymes/" class="blog-read-more">Leer más <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
 
                 <!-- 01 -->
                 <article class="blog-card" data-category="cobranza">

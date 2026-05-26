@@ -2,8 +2,9 @@
 /**
  * enviar.php - Procesador de formularios para Igmacob Chile
  *
- * UBICACIÓN: subir a la raíz de public_html/ del cPanel de igmacobchile.cl
- * URL FINAL:  https://igmacobchile.cl/enviar.php
+ * UBICACIÓN: subir a public_html/mail/ del cPanel de igmacobchile.cl
+ *            (subdominio mail.igmacobchile.cl apuntado a esa carpeta)
+ * URL FINAL:  https://mail.igmacobchile.cl/enviar.php
  *
  * Recibe POST de cualquier formulario del sitio estático (prueba.igmacobchile.cl
  * o igmacobchile.cl cuando migre) y envía email a comercial@igmacob.cl.
@@ -13,15 +14,14 @@
 $destinatario  = 'comercial@igmacob.cl';
 $from_email    = 'no-reply@igmacobchile.cl';   // debe existir como casilla o alias en cPanel
 $from_nombre   = 'Igmacob Chile Web';
-$gracias_url   = 'https://prueba.igmacobchile.cl/gracias/';
-// Cuando se migre el dominio, cambiar a: 'https://igmacobchile.cl/gracias.html'
+$gracias_url   = 'https://igmacobchile.cl/gracias/';
 // ----------------------------
 
-// CORS: permitir POST desde el subdominio de prueba y el dominio principal
+// CORS: permitir POST desde el dominio principal y subdominios
 $allowed_origins = [
-    'https://prueba.igmacobchile.cl',
     'https://igmacobchile.cl',
-    'https://www.igmacobchile.cl'
+    'https://www.igmacobchile.cl',
+    'https://prueba.igmacobchile.cl'
 ];
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 if (in_array($origin, $allowed_origins, true)) {

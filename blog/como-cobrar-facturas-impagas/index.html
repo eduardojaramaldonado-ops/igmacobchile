@@ -5,20 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- NOINDEX en subdominio de prueba -->
-    <script>
-        (function(){
-            if(location.hostname === 'prueba.igmacobchile.cl'){
-                var existing = document.querySelector('meta[name="robots"]');
-                if(existing) existing.remove();
-                var m = document.createElement('meta');
-                m.name = 'robots';
-                m.content = 'noindex, nofollow';
-                document.head.appendChild(m);
-            }
-        })();
-    </script>
-
     <!-- SEO -->
     <title>Cómo cobrar facturas impagas en Chile | Igmacob Chile</title>
     <meta name="description" content="Aprende cómo cobrar facturas impagas y recupera la liquidez de tu empresa con estrategias legales y efectivas. Contacta a Igmacob Chile"/>

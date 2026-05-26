@@ -6,20 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- NOINDEX en subdominio de prueba -->
-    <script>
-        (function(){
-            if(location.hostname === 'prueba.igmacobchile.cl'){
-                var existing = document.querySelector('meta[name="robots"]');
-                if(existing) existing.remove();
-                var m = document.createElement('meta');
-                m.name = 'robots';
-                m.content = 'noindex, nofollow';
-                document.head.appendChild(m);
-            }
-        })();
-    </script>
-
     <!-- SEO -->
     <title>Telemarketing | Servicio Profesional de Igmacob Chile</title>
     <meta name="description" content="Nuestro servicio de Telemarketing ofrece a las empresas soluciones integrales que combinan experiencia, tecnología y estrategia. Contáctanos"/>
