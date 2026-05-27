@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: igmacobchile
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    headers:
+      - path: /blog/feed.xml
+        name: Content-Type
+        value: application/rss+xml; charset=utf-8
+      - path: /blog/feed.xml
+        name: Cache-Control
+        value: public, max-age=600
+      - path: /blog/feed.xml
+        name: Access-Control-Allow-Origin
+        value: "*"
