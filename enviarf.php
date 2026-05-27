@@ -32,7 +32,8 @@ define('SMTP_SECU', PHPMailer::ENCRYPTION_SMTPS);
 // ---------- CORS ESTRICTO ----------
 $allowed_origins = [
     'https://igmacobchile.cl',
-    'https://www.igmacobchile.cl'
+    'https://www.igmacobchile.cl',
+    'https://prueba.igmacobchile.cl'
 ];
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 if (in_array($origin, $allowed_origins, true)) {
