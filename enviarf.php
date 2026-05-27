@@ -1,4 +1,7 @@
 <?php
+echo "HOLA MUNDO";
+exit;
+/*
 // ---------- CAPA DE SEGURIDAD INTERNA: RESTRICCIÓN DE ORIGEN DE SERVIDOR ----------
 // Asegurar que el script sea llamado exclusivamente desde el entorno del propio servidor local.
 // Previene que servidores externos usen este backend de envío.
@@ -169,4 +172,5 @@ try {
 } catch (Exception $e) {
     header('Location: ' . $gracias_url . '?error=server');
     exit;
-}
+}*/
+?>
