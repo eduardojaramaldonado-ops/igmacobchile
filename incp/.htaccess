@@ -1,0 +1,3 @@
+# Bloquear el acceso web directo a los archivos internos de PHPMailer
+Order Deny,Allow
+Deny from all
