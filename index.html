@@ -573,7 +573,7 @@
 
             <div class="contacto-form-box">
 
-                <form class="contacto-form" action="https://igmacobchile.cl/enviarf.php" method="POST">
+                <form id="form-web" class="contacto-form" action="https://igmacobchile.cl/enviarf.php" method="POST">
                     <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
                         <input type="hidden" name="origen" value="index.html">
 
@@ -597,12 +597,8 @@
                         <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
                     </div>
                     <div class="g-recaptcha" data-sitekey="6Ld7bP4sAAAAALyLEm5eq5Ltc_V2tT1fzxg6Tw5j"></div>
-                    <button type="submit">
-                        Enviar mensaje
-                    </button>
-
+                    <button class="g-recaptcha" data-sitekey="6Ld7bP4sAAAAALyLEm5eq5Ltc_V2tT1fzxg6Tw5j" data-callback='onSubmit' data-action='submit'>Enviar mensaje</button>
                 </form>
-
             </div>
 
         </div>
@@ -803,7 +799,11 @@
         </div>
 
     </footer>
-
+    <script>
+   function onSubmit(token) {
+     document.getElementById("form-web").submit();
+   }
+ </script>
     <script src="assets/js/main.js"></script>
 
 </body>
