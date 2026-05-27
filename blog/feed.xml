@@ -1,261 +1,406 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
 <title>Blog Igmacob Chile</title>
 <link>https://igmacobchile.cl/blog/</link>
-<description>Articulos sobre cobranza, gestion de cartera, recuperacion de facturas impagas y atencion al cliente para empresas y PYMEs en Chile.</description>
+<description>Articulos especializados sobre cobranza, gestion de cartera, recuperacion de facturas impagas y atencion al cliente para empresas y PYMEs en Chile.</description>
 <language>es-cl</language>
+<atom:link href="https://igmacobchile.cl/blog/feed.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>Cómo Reducir la Morosidad en una Empresa: 7 Estrategias para 2026</title>
 <link>https://igmacobchile.cl/blog/reducir-morosidad-empresa/</link>
-<guid>https://igmacobchile.cl/blog/reducir-morosidad-empresa/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/reducir-morosidad-empresa/</guid>
 <pubDate>Tue, 26 May 2026 12:00:00 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Aprende a reducir la morosidad en tu empresa con políticas de crédito claras, cobranza preventiva y métricas que mejoran el flujo de caja. Guía práctica para Chile.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2026/02/gestion-de-mora-de-una-empresa.webp" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2026/02/gestion-de-mora-de-una-empresa.webp" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2026/02/gestion-de-mora-de-una-empresa.webp" />
 </item>
 <item>
 <title>Cobranza Judicial de Facturas para PYMEs: Cuándo y Cómo Iniciar el Proceso</title>
 <link>https://igmacobchile.cl/blog/cobranza-judicial-de-facturas-pymes/</link>
-<guid>https://igmacobchile.cl/blog/cobranza-judicial-de-facturas-pymes/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/cobranza-judicial-de-facturas-pymes/</guid>
 <pubDate>Mon, 25 May 2026 12:00:00 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Guía práctica para PYMEs en Chile sobre cobranza judicial de facturas: cuándo demandar, requisitos legales, costos y cómo recuperar facturas impagas con respaldo legal.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2025/09/Cobro-Judicial-de-Facturas-de-Pymes.webp" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2025/09/Cobro-Judicial-de-Facturas-de-Pymes.webp" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2025/09/Cobro-Judicial-de-Facturas-de-Pymes.webp" />
 </item>
 <item>
 <title>Telemarketing inteligente: 5 claves para una campaña exitosa en Chile</title>
 <link>https://igmacobchile.cl/blog/telemarketing-inteligente/</link>
-<guid>https://igmacobchile.cl/blog/telemarketing-inteligente/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/telemarketing-inteligente/</guid>
 <pubDate>Thu, 21 May 2026 20:24:11 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>5 claves para diseñar campañas de telemarketing inteligente en Chile: segmentación, scripts efectivos, calidad de leads y conversión.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Prospección comercial para PYMEs: cómo encontrar nuevos clientes</title>
 <link>https://igmacobchile.cl/blog/prospeccion-comercial/</link>
-<guid>https://igmacobchile.cl/blog/prospeccion-comercial/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/prospeccion-comercial/</guid>
 <pubDate>Thu, 21 May 2026 20:24:11 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Guía de prospección comercial para PYMEs: cómo identificar, calificar y captar nuevos clientes con técnicas efectivas y herramientas profesionales.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Morosidad previsional: riesgos, multas y cómo regularizarse</title>
 <link>https://igmacobchile.cl/blog/morosidad-previsional/</link>
-<guid>https://igmacobchile.cl/blog/morosidad-previsional/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/morosidad-previsional/</guid>
 <pubDate>Thu, 21 May 2026 20:24:11 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Conoce los riesgos, multas y consecuencias legales de la morosidad previsional en Chile. Aprende cómo regularizar deudas con AFP y mutuales paso a paso.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Fidelización de clientes: cómo reducir la fuga en tu empresa</title>
 <link>https://igmacobchile.cl/blog/fidelizar-clientes/</link>
-<guid>https://igmacobchile.cl/blog/fidelizar-clientes/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/fidelizar-clientes/</guid>
 <pubDate>Thu, 21 May 2026 20:24:11 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Estrategias prácticas de fidelización de clientes para reducir la fuga, retener compradores y aumentar el valor de cada cliente en tu PYME o empresa.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Estrategias de cobranza preventiva para empresas en Chile</title>
 <link>https://igmacobchile.cl/blog/estrategias-de-cobranza-preventiva/</link>
-<guid>https://igmacobchile.cl/blog/estrategias-de-cobranza-preventiva/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/estrategias-de-cobranza-preventiva/</guid>
 <pubDate>Thu, 07 May 2026 00:19:07 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Descubre cómo las estrategias de cobranza preventiva para empresas ayudan a empresas y pymes a reducir la morosidad, mejorar su liquidez y recuperar pagos</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Deudas comerciales en Chile: Recupera pagos en tu empresa</title>
 <link>https://igmacobchile.cl/blog/deudas-comerciales-en-chile/</link>
-<guid>https://igmacobchile.cl/blog/deudas-comerciales-en-chile/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/deudas-comerciales-en-chile/</guid>
 <pubDate>Sun, 22 Mar 2026 23:32:07 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Descubre cómo gestionar deudas comerciales en Chile y recupera facturas impagas con estrategias efectivas de cobranza para empresas y pymes.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Cobranza Digital para empresas y pymes</title>
 <link>https://igmacobchile.cl/blog/cobranza-digital/</link>
-<guid>https://igmacobchile.cl/blog/cobranza-digital/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/cobranza-digital/</guid>
 <pubDate>Sun, 22 Feb 2026 22:10:10 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Cobranza Digital para mejorar liquidez y reducir morosidad. Descubre cómo optimizar la recuperación de pagos. Contacta a Igmacob Chile</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>¿Qué es la gestión de mora y cómo impacta la cobranza?</title>
 <link>https://igmacobchile.cl/blog/gestion-de-mora/</link>
-<guid>https://igmacobchile.cl/blog/gestion-de-mora/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/gestion-de-mora/</guid>
 <pubDate>Sun, 15 Feb 2026 14:30:39 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Descubre qué es la gestión de mora, cómo se relaciona con la cobranza y por qué es clave para mejorar la liquidez de tu empresa. Contáctanos</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Cómo cobrar facturas impagas en Chile</title>
 <link>https://igmacobchile.cl/blog/como-cobrar-facturas-impagas/</link>
-<guid>https://igmacobchile.cl/blog/como-cobrar-facturas-impagas/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/como-cobrar-facturas-impagas/</guid>
 <pubDate>Tue, 10 Feb 2026 14:21:15 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Aprende cómo cobrar facturas impagas y recupera la liquidez de tu empresa con estrategias legales y efectivas. Contacta a Igmacob Chile</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Cartera de Clientes: clave para mejorar la cobranza</title>
 <link>https://igmacobchile.cl/blog/cartera-de-clientes/</link>
-<guid>https://igmacobchile.cl/blog/cartera-de-clientes/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/cartera-de-clientes/</guid>
 <pubDate>Fri, 06 Feb 2026 23:14:03 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Aprende cómo gestionar tu Cartera de Clientes para optimizar la cobranza, reducir morosidad y mejorar la liquidez de tu empresa.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Juicio ejecutivo por facturas impagas y cobranza efectiva</title>
 <link>https://igmacobchile.cl/blog/juicio-ejecutivo/</link>
-<guid>https://igmacobchile.cl/blog/juicio-ejecutivo/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/juicio-ejecutivo/</guid>
 <pubDate>Sun, 01 Feb 2026 21:59:00 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Conoce cuándo usar el juicio ejecutivo para cobrar facturas impagas y cómo externalizar la cobranza para proteger la liquidez de tu empresa.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Ley 21.320 y cobranza de deudas en empresas</title>
 <link>https://igmacobchile.cl/blog/ley-21-320/</link>
-<guid>https://igmacobchile.cl/blog/ley-21-320/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/ley-21-320/</guid>
 <pubDate>Sat, 24 Jan 2026 20:40:59 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Ley 21.320: cómo cumplirla y mejorar la cobranza de deudas sin riesgos legales. Contacta a Igmacob Chile y gestiona la cobranza de tu empresa</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Empresas de cobranza en Santiago: Contacta a Igmacob Chile</title>
 <link>https://igmacobchile.cl/blog/empresas-de-cobranza-en-santiago/</link>
-<guid>https://igmacobchile.cl/blog/empresas-de-cobranza-en-santiago/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/empresas-de-cobranza-en-santiago/</guid>
 <pubDate>Wed, 14 Jan 2026 13:41:14 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Empresas de cobranza en Santiago para recuperar pagos sin juicio, mejorar liquidez y proteger relaciones comerciales. ¿Hablemos?</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Cobranza Extrajudicial: recupera pagos sin juicio</title>
 <link>https://igmacobchile.cl/blog/cobranza-extrajudicial/</link>
-<guid>https://igmacobchile.cl/blog/cobranza-extrajudicial/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/cobranza-extrajudicial/</guid>
 <pubDate>Sat, 10 Jan 2026 12:33:47 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Cobranza Extrajudicial efectiva para empresas. Recupera deudas, protege relaciones y mejora tu liquidez sin ir a juicio. Contáctanos</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Liquidez de una empresa: cobranza profesional para empresas</title>
 <link>https://igmacobchile.cl/blog/liquidez-de-una-empresa/</link>
-<guid>https://igmacobchile.cl/blog/liquidez-de-una-empresa/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/liquidez-de-una-empresa/</guid>
 <pubDate>Mon, 15 Dec 2025 11:57:12 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Descubre cómo mejorar la liquidez de una empresa con una gestión de cobranza eficiente. Igmacob Chile apoya a empresas y pymes en Chile.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Colegiaturas impagas en colegios privados</title>
 <link>https://igmacobchile.cl/blog/colegiaturas/</link>
-<guid>https://igmacobchile.cl/blog/colegiaturas/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/colegiaturas/</guid>
 <pubDate>Fri, 21 Nov 2025 14:57:33 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Cómo enfrentar colegiaturas impagas en colegios privados y mejorar la recuperación con cobranza especializada de Igmacob Chile.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Flujo de Caja: cómo mantener tu empresa siempre líquida</title>
 <link>https://igmacobchile.cl/blog/flujo-de-caja/</link>
-<guid>https://igmacobchile.cl/blog/flujo-de-caja/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/flujo-de-caja/</guid>
 <pubDate>Fri, 14 Nov 2025 08:00:27 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Aprende a gestionar el flujo de caja y protege la liquidez de tu empresa con la asesoría experta de Igmacob Chile.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Facturas impagas: soluciones efectivas para tu empresa</title>
 <link>https://igmacobchile.cl/blog/facturas-impagas/</link>
-<guid>https://igmacobchile.cl/blog/facturas-impagas/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/facturas-impagas/</guid>
 <pubDate>Sun, 09 Nov 2025 23:11:53 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Descubre cómo gestionar facturas impagas y proteger la liquidez de tu empresa con el apoyo profesional de Igmacob Chile.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Cómo cobrar sin perder clientes</title>
 <link>https://igmacobchile.cl/blog/como-cobrar/</link>
-<guid>https://igmacobchile.cl/blog/como-cobrar/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/como-cobrar/</guid>
 <pubDate>Thu, 30 Oct 2025 22:40:20 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Aprende cómo cobrar con éxito y mantener buenas relaciones comerciales. Igmacob Chile te guía paso a paso para recuperar tu liquidez.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>¿Qué es Cobranza Judicial? Guía completa para empresas</title>
 <link>https://igmacobchile.cl/blog/que-es-cobranza-judicial/</link>
-<guid>https://igmacobchile.cl/blog/que-es-cobranza-judicial/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/que-es-cobranza-judicial/</guid>
 <pubDate>Mon, 20 Oct 2025 21:59:08 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Descubre Qué es cobranza judicial y cómo Igmacob Chile ayuda a recuperar deudas empresariales con gestión profesional y efectiva. Contáctanos</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Convenios de Pago: solución eficaz para tu empresa</title>
 <link>https://igmacobchile.cl/blog/convenios-de-pago/</link>
-<guid>https://igmacobchile.cl/blog/convenios-de-pago/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/convenios-de-pago/</guid>
 <pubDate>Thu, 16 Oct 2025 00:01:24 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Descubre cómo los convenios de pago ayudan a recuperar facturas sin juicio. Externaliza tu cobranza con Igmacob Chile.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Procedimiento Ejecutivo: Cobranza eficaz para empresas</title>
 <link>https://igmacobchile.cl/blog/procedimiento-ejecutivo/</link>
-<guid>https://igmacobchile.cl/blog/procedimiento-ejecutivo/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/procedimiento-ejecutivo/</guid>
 <pubDate>Mon, 13 Oct 2025 11:41:12 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Conoce cómo el procedimiento ejecutivo de Igmacob mejora la liquidez y recupera tus cuentas por cobrar con eficiencia.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Outsourcing de Cobranza: una estrategia para tu empresa</title>
 <link>https://igmacobchile.cl/blog/outsourcing-de-cobranza/</link>
-<guid>https://igmacobchile.cl/blog/outsourcing-de-cobranza/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/outsourcing-de-cobranza/</guid>
 <pubDate>Mon, 06 Oct 2025 22:02:47 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Descubre cómo el outsourcing de cobranza optimiza tus finanzas y mejora la gestión de pagos en tu empresa o pyme. Contáctanos</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Ejecutivo de Cobranzas: aliado estratégico para empresas</title>
 <link>https://igmacobchile.cl/blog/ejecutivo-de-cobranzas/</link>
-<guid>https://igmacobchile.cl/blog/ejecutivo-de-cobranzas/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/ejecutivo-de-cobranzas/</guid>
 <pubDate>Sat, 27 Sep 2025 01:25:05 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Ejecutivo de Cobranzas externo asegura liquidez y gestión profesional de cuentas por cobrar para PYMEs y grandes empresas.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Deudas comerciales: La solución efectiva con Igmacob Chile</title>
 <link>https://igmacobchile.cl/blog/deudas-comerciales/</link>
-<guid>https://igmacobchile.cl/blog/deudas-comerciales/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/deudas-comerciales/</guid>
 <pubDate>Wed, 24 Sep 2025 22:22:55 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Deudas comerciales afectan tu liquidez. Igmacob Chile ofrece servicio de cobranza integral para empresas y PYMEs. Habla con un experto ahora</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Morosidad: cómo afecta realmente a tu Pyme en Chile</title>
 <link>https://igmacobchile.cl/blog/morosidad/</link>
-<guid>https://igmacobchile.cl/blog/morosidad/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/morosidad/</guid>
 <pubDate>Mon, 28 Jul 2025 13:20:45 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Descubre cómo la morosidad impacta tu pyme y qué hacer para cobrar a tiempo con soluciones expertas de cobranza para empresas.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Cobranza Prejudicial: guía 2025 para PYMEs en Chile</title>
 <link>https://igmacobchile.cl/blog/cobranza-prejudicial/</link>
-<guid>https://igmacobchile.cl/blog/cobranza-prejudicial/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/cobranza-prejudicial/</guid>
 <pubDate>Mon, 14 Jul 2025 00:56:53 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Descubre cómo la Cobranza Prejudicial optimiza tu flujo de caja y por qué externalizarla con Igmacob Chile es la mejor decisión.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Ley Marco de Ciberseguridad: Guía Clave para Cobranza</title>
 <link>https://igmacobchile.cl/blog/ley-marco-de-ciberseguridad/</link>
-<guid>https://igmacobchile.cl/blog/ley-marco-de-ciberseguridad/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/ley-marco-de-ciberseguridad/</guid>
 <pubDate>Sat, 05 Jul 2025 01:04:21 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Ley Marco de Ciberseguridad: protege la cobranza de facturas en tu empresa y evita multas; conoce requisitos y buenas prácticas.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Recordatorios de Pago</title>
 <link>https://igmacobchile.cl/blog/recordatorios-de-pago/</link>
-<guid>https://igmacobchile.cl/blog/recordatorios-de-pago/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/recordatorios-de-pago/</guid>
 <pubDate>Tue, 27 May 2025 23:23:54 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Recordatorios de Pago efectivo: mensajes automáticos y pagos sin fricción para tu pyme con Igmacob Chile. Contáctate con nosotros</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Servicio de Contact Center para Pymes: Cobranza y Atención</title>
 <link>https://igmacobchile.cl/blog/servicio-de-contact-center/</link>
-<guid>https://igmacobchile.cl/blog/servicio-de-contact-center/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/servicio-de-contact-center/</guid>
 <pubDate>Tue, 13 May 2025 18:10:56 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Servicio de contact center para pymes: recupera facturas, mejora experiencia y ahorra con outsourcers expertos como Igmacob Chile.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Cuentas por Cobrar: Guía Definitiva para pymes chilenas</title>
 <link>https://igmacobchile.cl/blog/cuentas-por-cobrar/</link>
-<guid>https://igmacobchile.cl/blog/cuentas-por-cobrar/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/cuentas-por-cobrar/</guid>
 <pubDate>Thu, 08 May 2025 17:47:10 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Optimiza tus Cuentas por Cobrar: reduce DSO y liquidezate. Descubre cómo Igmacob Chile potencia la cobranza de facturas impagas.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Gestión de cobranza: clave para el éxito de tu pyme</title>
 <link>https://igmacobchile.cl/blog/gestion-de-cobranza/</link>
-<guid>https://igmacobchile.cl/blog/gestion-de-cobranza/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/gestion-de-cobranza/</guid>
 <pubDate>Tue, 15 Apr 2025 01:45:31 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Optimiza la gestión de cobranza en tu pyme y mejora tu flujo de caja con soluciones efectivas y profesionales.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Psicología de la Cobranza: Estrategias Efectivas y Éticas</title>
 <link>https://igmacobchile.cl/blog/psicologia-de-la-cobranza/</link>
-<guid>https://igmacobchile.cl/blog/psicologia-de-la-cobranza/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/psicologia-de-la-cobranza/</guid>
 <pubDate>Fri, 28 Feb 2025 13:31:24 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Descubre cómo la psicología de la cobranza transforma estrategias para recuperar deudas de manera efectiva y respetuosa. ¡¡Contáctanos!!</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 <item>
 <title>Comunicación Efectiva: Persuade y Cobra Deudas con Éxito</title>
 <link>https://igmacobchile.cl/blog/comunicacion-efectiva/</link>
-<guid>https://igmacobchile.cl/blog/comunicacion-efectiva/</guid>
+<guid isPermaLink="true">https://igmacobchile.cl/blog/comunicacion-efectiva/</guid>
 <pubDate>Wed, 05 Feb 2025 19:47:50 +0000</pubDate>
+<dc:creator>Igmacob Chile</dc:creator>
 <description>Descubre cómo usar la comunicación efectiva para persuadir y cobrar deudas. Mejora tus técnicas de cobranza con nuestras estrategias útiles.</description>
+<enclosure url="https://igmacobchile.cl/assets/img/2024/10/logo.png" type="image/webp" length="0" />
+<media:content url="https://igmacobchile.cl/assets/img/2024/10/logo.png" medium="image" />
+<media:thumbnail url="https://igmacobchile.cl/assets/img/2024/10/logo.png" />
 </item>
 </channel>
 </rss>
