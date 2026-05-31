@@ -1,3 +1,8 @@
 # Bloquear el acceso web directo a los archivos internos de PHPMailer
+<<<<<<< Updated upstream
 # Order Deny,Allow
 # Deny from all
+=======
+Order Deny,Allow
+Deny from all
+>>>>>>> Stashed changes
