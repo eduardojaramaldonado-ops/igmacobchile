@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /gracias/
+Disallow: /cpanel/
+Disallow: /incp/
+
+Sitemap: https://igmacobchile.cl/sitemap.xml
