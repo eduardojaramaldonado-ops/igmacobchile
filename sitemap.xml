@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://igmacobchile.cl/</loc>
-        <lastmod>2026-06-08T00:08:51+00:00</lastmod>
+        <lastmod>2026-06-15T00:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -98,9 +98,27 @@
     </url>
     <url>
         <loc>https://igmacobchile.cl/blog/</loc>
-        <lastmod>2026-06-08T00:08:51+00:00</lastmod>
+        <lastmod>2026-06-15T00:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://igmacobchile.cl/blog/cobranza-centros-medicos/</loc>
+        <lastmod>2026-06-15T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://igmacobchile.cl/blog/honorarios-empresa-cobranza/</loc>
+        <lastmod>2026-06-09T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://igmacobchile.cl/blog/empresa-no-paga-factura/</loc>
+        <lastmod>2026-06-08T12:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://igmacobchile.cl/blog/cartera-de-clientes/</loc>
