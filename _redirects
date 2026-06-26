@@ -1,126 +1,133 @@
 # ============================================================
-# REDIRECTS 301 — URLs viejas del WordPress oficial → URLs nuevas
-# Render lee este archivo automáticamente y aplica los redirects.
-# Formato: <ruta-vieja> <ruta-nueva> <código>
+# REDIRECTS 301 - URLs viejas WordPress -> nuevas URLs Render
+# Reglas mas ESPECIFICAS primero (orden importa, primer match gana)
 # ============================================================
 
-# --- LIMPIEZA DE URLs: /carpeta/index.html → /carpeta/ ---
-/index.html                                 /                                     301
-/*/index.html                               /:splat/                              301
-
-
-# --- LANDINGS PRINCIPALES (cambio de subcarpeta a raíz limpia) ---
-/prejudicial                                /cobranza-prejudicial/                301
-/prejudicial/                               /cobranza-prejudicial/                301
-
-/cobranza-b2b/cobranza-de-facturas          /cobranza-de-facturas/                301
-/cobranza-b2b/cobranza-de-facturas/         /cobranza-de-facturas/                301
-
-/cobranza-b2b/mundo-pymes                   /mundo-pymes/                         301
-/cobranza-b2b/mundo-pymes/                  /mundo-pymes/                         301
-
-/cobranza-b2b/deudas-previsionales          /cobranza-previsional/                301
-/cobranza-b2b/deudas-previsionales/         /cobranza-previsional/                301
-
-/cobranza-a-personas/cobranza-preventiva    /cobranza-preventiva/                 301
-/cobranza-a-personas/cobranza-preventiva/   /cobranza-preventiva/                 301
-
-/cobranza-a-personas/castigo                /cobranza-castigo/                    301
-/cobranza-a-personas/castigo/               /cobranza-castigo/                    301
-
-/call-center                                /servicios-call-center/               301
-/call-center/                               /servicios-call-center/               301
-
-# --- HUBS DE SERVICIOS DEL WORDPRESS (no existen en el sitio nuevo) → home ---
-/cobranza-b2b                               /                                     301
-/cobranza-b2b/                              /                                     301
-/cobranza-a-personas                        /                                     301
-/cobranza-a-personas/                       /                                     301
-
-# --- PÁGINA "MENSAJE ENVIADO" DEL WP → nueva /gracias/ ---
-/mensaje-enviado                            /gracias/                             301
-/mensaje-enviado/                           /gracias/                             301
-
-# --- BLOG: posts con slug ambiguo o tema distinto al original ---
-/blog/proveedores                           /blog/prospeccion-comercial/          301
-/blog/proveedores/                          /blog/prospeccion-comercial/          301
-
-/blog/atencion-al-cliente                   /blog/telemarketing-inteligente/      301
-/blog/atencion-al-cliente/                  /blog/telemarketing-inteligente/      301
-
-/blog/deudas-por-servicios-medicos          /blog/morosidad-previsional/          301
-/blog/deudas-por-servicios-medicos/         /blog/morosidad-previsional/          301
-
-# El WP tenía "fidelización" como página landing, no como blog → redirigir a landing
-/blog/fidelizacion-de-clientes              /fidelizacion-de-clientes/            301
-/blog/fidelizacion-de-clientes/             /fidelizacion-de-clientes/            301
+# --- LIMPIEZA URLs index.html ---
+/index.html                                                  /                            301
+/*/index.html                                                /:splat/                     301
 
 
 # ============================================================
-# RECUPERACION SEO 2026-06 — URLs detectadas en GSC sin redirect
-# Origen: "Rastreada actualmente sin indexar" (junio 2026)
+# BLOQUE 1: URLs CON SLUG ESPECIFICO (mas profundas primero)
 # ============================================================
 
-# --- ESTRUCTURA WP /cobranza-a-personas/* y /cobranza-a-empresas-b2b/* ---
-/cobranza-a-personas/preventiva             /cobranza-preventiva/                 301
-/cobranza-a-personas/preventiva/            /cobranza-preventiva/                 301
+# --- /cobranza-a-personas/<slug>/ ---
+/cobranza-a-personas/cobranza-preventiva                     /cobranza-preventiva/        301
+/cobranza-a-personas/cobranza-preventiva/                    /cobranza-preventiva/        301
+/cobranza-a-personas/preventiva                              /cobranza-preventiva/        301
+/cobranza-a-personas/preventiva/                             /cobranza-preventiva/        301
+/cobranza-a-personas/prejudicial                             /cobranza-prejudicial/       301
+/cobranza-a-personas/prejudicial/                            /cobranza-prejudicial/       301
+/cobranza-a-personas/castigo                                 /cobranza-castigo/           301
+/cobranza-a-personas/castigo/                                /cobranza-castigo/           301
 
-/cobranza-a-personas/prejudicial            /cobranza-prejudicial/                301
-/cobranza-a-personas/prejudicial/           /cobranza-prejudicial/                301
+# --- /cobranza-a-empresas-b2b/<slug>/ ---
+/cobranza-a-empresas-b2b/deudas-previsionales                /cobranza-previsional/       301
+/cobranza-a-empresas-b2b/deudas-previsionales/               /cobranza-previsional/       301
+/cobranza-a-empresas-b2b/cobranza-de-facturas                /cobranza-de-facturas/       301
+/cobranza-a-empresas-b2b/cobranza-de-facturas/               /cobranza-de-facturas/       301
+/cobranza-a-empresas-b2b/facturas                            /cobranza-de-facturas/       301
+/cobranza-a-empresas-b2b/facturas/                           /cobranza-de-facturas/       301
 
-/cobranza-a-empresas-b2b/deudas-previsionales   /cobranza-previsional/            301
-/cobranza-a-empresas-b2b/deudas-previsionales/  /cobranza-previsional/            301
+# --- /cobranza-b2b/<slug>/ (estructura intermedia) ---
+/cobranza-b2b/cobranza-de-facturas                           /cobranza-de-facturas/       301
+/cobranza-b2b/cobranza-de-facturas/                          /cobranza-de-facturas/       301
+/cobranza-b2b/mundo-pymes                                    /mundo-pymes/                301
+/cobranza-b2b/mundo-pymes/                                   /mundo-pymes/                301
+/cobranza-b2b/deudas-previsionales                           /cobranza-previsional/       301
+/cobranza-b2b/deudas-previsionales/                          /cobranza-previsional/       301
 
-/cobranza-a-empresas-b2b/cobranza-de-facturas   /cobranza-de-facturas/            301
-/cobranza-a-empresas-b2b/cobranza-de-facturas/  /cobranza-de-facturas/            301
+# --- /servicios-de-contact-center/<slug>/ ---
+/servicios-de-contact-center/telemarketing                   /telemarketing/              301
+/servicios-de-contact-center/telemarketing/                  /telemarketing/              301
+/servicios-de-contact-center/auditoria-de-ventas             /servicios-call-center/      301
+/servicios-de-contact-center/auditoria-de-ventas/            /servicios-call-center/      301
 
-/cobranza-a-empresas-b2b/facturas           /cobranza-de-facturas/                301
-/cobranza-a-empresas-b2b/facturas/          /cobranza-de-facturas/                301
+# --- /contact-center/<slug>/ ---
+/contact-center/telemarketing                                /telemarketing/              301
+/contact-center/telemarketing/                               /telemarketing/              301
+/contact-center/auditoria-de-ventas                          /servicios-call-center/      301
+/contact-center/auditoria-de-ventas/                         /servicios-call-center/      301
 
-/cobranza-a-empresas-b2b                    /mundo-pymes/                         301
-/cobranza-a-empresas-b2b/                   /mundo-pymes/                         301
 
-# --- ESTRUCTURA WP /contact-center/* y /servicios-de-contact-center/* ---
-/contact-center                             /servicios-call-center/               301
-/contact-center/                            /servicios-call-center/               301
+# ============================================================
+# BLOQUE 2: HUBS DE SERVICIOS (raiz de categoria - menos especifico)
+# ============================================================
 
-/contact-center/telemarketing               /telemarketing/                       301
-/contact-center/telemarketing/              /telemarketing/                       301
+/cobranza-a-personas                                         /                            301
+/cobranza-a-personas/                                        /                            301
+/cobranza-a-empresas-b2b                                     /mundo-pymes/                301
+/cobranza-a-empresas-b2b/                                    /mundo-pymes/                301
+/cobranza-b2b                                                /                            301
+/cobranza-b2b/                                               /                            301
+/servicios-de-contact-center                                 /servicios-call-center/      301
+/servicios-de-contact-center/                                /servicios-call-center/      301
+/contact-center                                              /servicios-call-center/      301
+/contact-center/                                             /servicios-call-center/      301
 
-/contact-center/auditoria-de-ventas         /servicios-call-center/               301
-/contact-center/auditoria-de-ventas/        /servicios-call-center/               301
 
-/servicios-de-contact-center                /servicios-call-center/               301
-/servicios-de-contact-center/               /servicios-call-center/               301
+# ============================================================
+# BLOQUE 3: LANDINGS RAIZ (sin subcarpeta)
+# ============================================================
 
-/servicios-de-contact-center/telemarketing  /telemarketing/                       301
-/servicios-de-contact-center/telemarketing/ /telemarketing/                       301
+/prejudicial                                                 /cobranza-prejudicial/       301
+/prejudicial/                                                /cobranza-prejudicial/       301
+/call-center                                                 /servicios-call-center/      301
+/call-center/                                                /servicios-call-center/      301
 
-/servicios-de-contact-center/auditoria-de-ventas    /servicios-call-center/       301
-/servicios-de-contact-center/auditoria-de-ventas/   /servicios-call-center/       301
 
-# --- BLOGS DEL WP CON SLUG CAMBIADO ---
-/blog/servicio-de-cobranza                  /cobranza-prejudicial/                301
-/blog/servicio-de-cobranza/                 /cobranza-prejudicial/                301
+# ============================================================
+# BLOQUE 4: BLOG con slug cambiado
+# ============================================================
 
-/blog/pago-de-facturas                      /blog/facturas-impagas/               301
-/blog/pago-de-facturas/                     /blog/facturas-impagas/               301
+/blog/proveedores                                            /blog/prospeccion-comercial/         301
+/blog/proveedores/                                           /blog/prospeccion-comercial/         301
+/blog/atencion-al-cliente                                    /blog/telemarketing-inteligente/     301
+/blog/atencion-al-cliente/                                   /blog/telemarketing-inteligente/     301
+/blog/deudas-por-servicios-medicos                           /blog/morosidad-previsional/         301
+/blog/deudas-por-servicios-medicos/                          /blog/morosidad-previsional/         301
+/blog/fidelizacion-de-clientes                               /fidelizacion-de-clientes/           301
+/blog/fidelizacion-de-clientes/                              /fidelizacion-de-clientes/           301
+/blog/servicio-de-cobranza                                   /cobranza-prejudicial/               301
+/blog/servicio-de-cobranza/                                  /cobranza-prejudicial/               301
+/blog/pago-de-facturas                                       /blog/facturas-impagas/              301
+/blog/pago-de-facturas/                                      /blog/facturas-impagas/              301
+/blog/ejecutivo-de-cuentas                                   /blog/ejecutivo-de-cobranzas/        301
+/blog/ejecutivo-de-cuentas/                                  /blog/ejecutivo-de-cobranzas/        301
+/blog/consulta-judicial                                      /blog/que-es-cobranza-judicial/      301
+/blog/consulta-judicial/                                     /blog/que-es-cobranza-judicial/      301
 
-/blog/ejecutivo-de-cuentas                  /blog/ejecutivo-de-cobranzas/         301
-/blog/ejecutivo-de-cuentas/                 /blog/ejecutivo-de-cobranzas/         301
 
-/blog/consulta-judicial                     /blog/que-es-cobranza-judicial/       301
-/blog/consulta-judicial/                    /blog/que-es-cobranza-judicial/       301
+# ============================================================
+# BLOQUE 5: MENSAJE ENVIADO / GRACIAS
+# ============================================================
 
-# --- WORDPRESS AUTHOR / ENDPOINTS → home ---
-/author/seo                                 /                                     301
-/author/seo/                                /                                     301
-/author/*                                   /                                     301
+/mensaje-enviado                                             /gracias/                    301
+/mensaje-enviado/                                            /gracias/                    301
 
-# --- TRAILING SLASH MISSING (canonicalización) ---
-/contacto                                   /contacto/                            301
 
-# --- WWW → APEX (anti split de autoridad) ---
-https://www.igmacobchile.cl/*               https://igmacobchile.cl/:splat        301!
-http://www.igmacobchile.cl/*                https://igmacobchile.cl/:splat        301!
-http://igmacobchile.cl/*                    https://igmacobchile.cl/:splat        301!
+# ============================================================
+# BLOQUE 6: ENDPOINTS WORDPRESS / AUTHOR -> home
+# ============================================================
+
+/author/seo                                                  /                            301
+/author/seo/                                                 /                            301
+/author/*                                                    /                            301
+
+
+# ============================================================
+# BLOQUE 7: TRAILING SLASH MISSING
+# ============================================================
+
+/contacto                                                    /contacto/                   301
+
+
+# ============================================================
+# BLOQUE 8: WWW -> APEX + HTTPS (anti split de autoridad)
+# Nota: tambien debe configurarse en Render Dashboard
+# ============================================================
+
+https://www.igmacobchile.cl/*                                https://igmacobchile.cl/:splat       301!
+http://www.igmacobchile.cl/*                                 https://igmacobchile.cl/:splat       301!
+http://igmacobchile.cl/*                                     https://igmacobchile.cl/:splat       301!
