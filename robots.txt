@@ -1,7 +1,23 @@
 User-agent: *
 Allow: /
+
+# Paginas internas / utilitarias
 Disallow: /gracias/
 Disallow: /cpanel/
 Disallow: /incp/
+
+# Endpoints WordPress huerfanos (post-migracion estatica)
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /wp-content/
+Disallow: /author/
+Disallow: /xmlrpc.php
+Disallow: /readme.html
+
+# Parametros de busqueda y filtros
+Disallow: /*?s=
+Disallow: /*?p=
+Disallow: /*?replytocom=
 
 Sitemap: https://igmacobchile.cl/sitemap.xml
