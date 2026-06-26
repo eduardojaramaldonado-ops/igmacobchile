@@ -1,0 +1,178 @@
+# ============================================================
+# .htaccess - igmacobchile.cl (Apache)
+# Equivalente a _redirects + _headers (sintaxis Netlify/Render)
+# ============================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # ============================================================
+    # WWW -> APEX + forzar HTTPS
+    # ============================================================
+    RewriteCond %{HTTP_HOST} ^www\.igmacobchile\.cl [NC]
+    RewriteRule ^(.*)$ https://igmacobchile.cl/$1 [R=301,L]
+
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP_HOST} ^igmacobchile\.cl [NC]
+    RewriteRule ^(.*)$ https://igmacobchile.cl/$1 [R=301,L]
+
+    # ============================================================
+    # BLOQUE 1: Estructura WP /cobranza-a-personas/<slug>/
+    # ============================================================
+    RewriteRule ^cobranza-a-personas/cobranza-preventiva/?$ /cobranza-preventiva/ [R=301,L]
+    RewriteRule ^cobranza-a-personas/preventiva/?$ /cobranza-preventiva/ [R=301,L]
+    RewriteRule ^cobranza-a-personas/prejudicial/?$ /cobranza-prejudicial/ [R=301,L]
+    RewriteRule ^cobranza-a-personas/castigo/?$ /cobranza-castigo/ [R=301,L]
+    RewriteRule ^cobranza-a-personas/?$ / [R=301,L]
+
+    # ============================================================
+    # BLOQUE 2: Estructura WP /cobranza-a-empresas-b2b/<slug>/
+    # ============================================================
+    RewriteRule ^cobranza-a-empresas-b2b/deudas-previsionales/?$ /cobranza-previsional/ [R=301,L]
+    RewriteRule ^cobranza-a-empresas-b2b/cobranza-de-facturas/?$ /cobranza-de-facturas/ [R=301,L]
+    RewriteRule ^cobranza-a-empresas-b2b/facturas/?$ /cobranza-de-facturas/ [R=301,L]
+    RewriteRule ^cobranza-a-empresas-b2b/?$ /mundo-pymes/ [R=301,L]
+
+    # ============================================================
+    # BLOQUE 3: Estructura intermedia /cobranza-b2b/<slug>/
+    # ============================================================
+    RewriteRule ^cobranza-b2b/cobranza-de-facturas/?$ /cobranza-de-facturas/ [R=301,L]
+    RewriteRule ^cobranza-b2b/mundo-pymes/?$ /mundo-pymes/ [R=301,L]
+    RewriteRule ^cobranza-b2b/deudas-previsionales/?$ /cobranza-previsional/ [R=301,L]
+    RewriteRule ^cobranza-b2b/?$ / [R=301,L]
+
+    # ============================================================
+    # BLOQUE 4: Estructura WP /contact-center/<slug>/
+    # ============================================================
+    RewriteRule ^contact-center/telemarketing/?$ /telemarketing/ [R=301,L]
+    RewriteRule ^contact-center/auditoria-de-ventas/?$ /servicios-call-center/ [R=301,L]
+    RewriteRule ^contact-center/?$ /servicios-call-center/ [R=301,L]
+
+    # ============================================================
+    # BLOQUE 5: Estructura WP /servicios-de-contact-center/<slug>/
+    # ============================================================
+    RewriteRule ^servicios-de-contact-center/telemarketing/?$ /telemarketing/ [R=301,L]
+    RewriteRule ^servicios-de-contact-center/auditoria-de-ventas/?$ /servicios-call-center/ [R=301,L]
+    RewriteRule ^servicios-de-contact-center/?$ /servicios-call-center/ [R=301,L]
+
+    # ============================================================
+    # BLOQUE 6: Landings raiz con slug cambiado
+    # ============================================================
+    RewriteRule ^prejudicial/?$ /cobranza-prejudicial/ [R=301,L]
+    RewriteRule ^call-center/?$ /servicios-call-center/ [R=301,L]
+
+    # ============================================================
+    # BLOQUE 7: Blog con slug cambiado
+    # ============================================================
+    RewriteRule ^blog/proveedores/?$ /blog/prospeccion-comercial/ [R=301,L]
+    RewriteRule ^blog/atencion-al-cliente/?$ /blog/telemarketing-inteligente/ [R=301,L]
+    RewriteRule ^blog/deudas-por-servicios-medicos/?$ /blog/morosidad-previsional/ [R=301,L]
+    RewriteRule ^blog/fidelizacion-de-clientes/?$ /fidelizacion-de-clientes/ [R=301,L]
+    RewriteRule ^blog/servicio-de-cobranza/?$ /cobranza-prejudicial/ [R=301,L]
+    RewriteRule ^blog/pago-de-facturas/?$ /blog/facturas-impagas/ [R=301,L]
+    RewriteRule ^blog/ejecutivo-de-cuentas/?$ /blog/ejecutivo-de-cobranzas/ [R=301,L]
+    RewriteRule ^blog/consulta-judicial/?$ /blog/que-es-cobranza-judicial/ [R=301,L]
+
+    # ============================================================
+    # BLOQUE 8: Mensaje enviado WP -> /gracias/
+    # ============================================================
+    RewriteRule ^mensaje-enviado/?$ /gracias/ [R=301,L]
+
+    # ============================================================
+    # BLOQUE 9: WordPress author endpoints -> home
+    # ============================================================
+    RewriteRule ^author/.*$ / [R=301,L]
+
+    # ============================================================
+    # BLOQUE 10: Trailing slash para /contacto (sin slash)
+    # ============================================================
+    RewriteRule ^contacto$ /contacto/ [R=301,L]
+</IfModule>
+
+
+# ============================================================
+# CONTENT-TYPE para feed RSS y sitemap (equivalente a _headers)
+# ============================================================
+<IfModule mod_headers.c>
+    # RSS feed
+    <FilesMatch "feed\.xml$">
+        Header set Content-Type "application/rss+xml; charset=utf-8"
+        Header set Cache-Control "public, max-age=600"
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+
+    # Sitemap
+    <FilesMatch "sitemap\.xml$">
+        Header set Content-Type "application/xml; charset=utf-8"
+        Header set Cache-Control "public, max-age=3600"
+    </FilesMatch>
+
+    # Robots
+    <FilesMatch "robots\.txt$">
+        Header set Cache-Control "public, max-age=3600"
+    </FilesMatch>
+</IfModule>
+
+# Garantizar tipos MIME correctos (algunos hostings los omiten)
+<IfModule mod_mime.c>
+    AddType application/rss+xml .xml
+    AddType image/webp .webp
+    AddType image/svg+xml .svg
+    AddType application/x-font-woff .woff
+    AddType application/font-woff2 .woff2
+</IfModule>
+
+
+# ============================================================
+# COMPRESION GZIP (mejora Core Web Vitals / LCP)
+# ============================================================
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+
+# ============================================================
+# CACHE LARGO para assets estaticos (mejora rendimiento)
+# ============================================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+
+# ============================================================
+# HEADERS DE SEGURIDAD basicos
+# ============================================================
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+
+# ============================================================
+# Bloqueo de acceso a archivos sensibles
+# ============================================================
+<FilesMatch "^\.(git|env|htaccess)">
+    Require all denied
+</FilesMatch>
+
+# Evitar listado de directorios
+Options -Indexes
