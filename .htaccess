@@ -88,6 +88,49 @@
     # BLOQUE 10: Trailing slash para /contacto (sin slash)
     # ============================================================
     RewriteRule ^contacto$ /contacto/ [R=301,L]
+
+    # ============================================================
+    # BLOQUE 11: URLs WP huerfanas detectadas via GSC (ago 2026)
+    # 34% de los clics del sitio apuntaban a URLs sin redirect -> 404
+    # ============================================================
+    RewriteRule ^blog/cobro-judicial-de-facturas/?$ /blog/cobranza-judicial-de-facturas-pymes/ [R=301,L]
+    RewriteRule ^blog/pymes-chilenas-exitosas/?$ /mundo-pymes/ [R=301,L]
+    RewriteRule ^blog/pymes-chilenas/?$ /mundo-pymes/ [R=301,L]
+    RewriteRule ^blog/paga-una-factura/?$ /blog/facturas-impagas/ [R=301,L]
+    RewriteRule ^blog/emprendimientos-exitosos/?$ /mundo-pymes/ [R=301,L]
+    RewriteRule ^blog/cobranza-para-empresas/?$ /cobranza-prejudicial/ [R=301,L]
+    RewriteRule ^blog/arancel-universitario/?$ /blog/colegiaturas/ [R=301,L]
+    RewriteRule ^blog/base-de-datos/?$ /blog/prospeccion-comercial/ [R=301,L]
+    RewriteRule ^blog/cobranzas-judiciales/?$ /blog/que-es-cobranza-judicial/ [R=301,L]
+    RewriteRule ^blog/estrategias/?$ /blog/estrategias-de-cobranza-preventiva/ [R=301,L]
+    RewriteRule ^blog/cobro-de-facturas/?$ /blog/facturas-impagas/ [R=301,L]
+    RewriteRule ^blog/servicio-integral-de-cobranza/?$ /cobranza-prejudicial/ [R=301,L]
+    RewriteRule ^blog/que-es-un-emprendedor/?$ /mundo-pymes/ [R=301,L]
+    RewriteRule ^blog/como-cobrar-una-factura-impaga/?$ /blog/como-cobrar-facturas-impagas/ [R=301,L]
+    RewriteRule ^blog/cobranza-judicial-en-chile/?$ /cobranza-judicial/ [R=301,L]
+    RewriteRule ^blog/pago-de-cuentas/?$ /blog/facturas-impagas/ [R=301,L]
+    RewriteRule ^blog/cobro-de-facturas-impagas/?$ /blog/facturas-impagas/ [R=301,L]
+    RewriteRule ^auditoria-de-ventas/?$ /servicios-call-center/ [R=301,L]
+    RewriteRule ^nosotros/?$ / [R=301,L]
+    RewriteRule ^blog/gestion/?$ /blog/gestion-de-cobranza/ [R=301,L]
+    RewriteRule ^blog/cobranzas-extrajudiciales/?$ /blog/cobranza-extrajudicial/ [R=301,L]
+    RewriteRule ^blog/factura/?$ /blog/facturas-impagas/ [R=301,L]
+    RewriteRule ^blog/empresas-de-cobranza/?$ /empresa-de-cobranza-en-santiago/ [R=301,L]
+    RewriteRule ^blog/pymes-en-chile/?$ /mundo-pymes/ [R=301,L]
+    RewriteRule ^blog/ejecutivo/?$ /blog/ejecutivo-de-cobranzas/ [R=301,L]
+    RewriteRule ^blog/facturas-vencidas/?$ /blog/facturas-impagas/ [R=301,L]
+    RewriteRule ^blog/plan-empresas/?$ /mundo-pymes/ [R=301,L]
+    RewriteRule ^blog/canales-de-comunicacion/?$ /blog/comunicacion-efectiva/ [R=301,L]
+    RewriteRule ^blog/cobranza-de-facturas-impagas/?$ /blog/facturas-impagas/ [R=301,L]
+    RewriteRule ^blog/factura-electronica/?$ /blog/facturas-impagas/ [R=301,L]
+    RewriteRule ^prospeccion-comercial/?$ /blog/prospeccion-comercial/ [R=301,L]
+    RewriteRule ^prospeccion-de-ventas/?$ /blog/prospeccion-comercial/ [R=301,L]
+    RewriteRule ^blog/contactabilidad/?$ /blog/comunicacion-efectiva/ [R=301,L]
+    RewriteRule ^blog/empresa-pequena/?$ /mundo-pymes/ [R=301,L]
+    RewriteRule ^blog/microempresas/?$ /mundo-pymes/ [R=301,L]
+    RewriteRule ^blog/apoyo-a-pymes/?$ /mundo-pymes/ [R=301,L]
+    RewriteRule ^blog/planes-pymes/?$ /mundo-pymes/ [R=301,L]
+    RewriteRule ^category/blog/?$ /blog/ [R=301,L]
 </IfModule>
 
 

@@ -131,3 +131,48 @@
 https://www.igmacobchile.cl/*                                https://igmacobchile.cl/:splat       301!
 http://www.igmacobchile.cl/*                                 https://igmacobchile.cl/:splat       301!
 http://igmacobchile.cl/*                                     https://igmacobchile.cl/:splat       301!
+
+
+# ============================================================
+# BLOQUE 9: URLs WP HUERFANAS DETECTADAS VIA GSC (AGO 2026)
+# 34% de los clics del sitio apuntaban a URLs sin redirect -> 404
+# ============================================================
+
+/blog/cobro-judicial-de-facturas/                            /blog/cobranza-judicial-de-facturas-pymes/  301
+/blog/pymes-chilenas-exitosas/                                /mundo-pymes/                 301
+/blog/pymes-chilenas/                                         /mundo-pymes/                 301
+/blog/paga-una-factura/                                       /blog/facturas-impagas/       301
+/blog/emprendimientos-exitosos/                                /mundo-pymes/                 301
+/blog/cobranza-para-empresas/                                  /cobranza-prejudicial/        301
+/blog/arancel-universitario/                                   /blog/colegiaturas/           301
+/blog/base-de-datos/                                           /blog/prospeccion-comercial/  301
+/blog/cobranzas-judiciales/                                    /blog/que-es-cobranza-judicial/  301
+/blog/estrategias/                                              /blog/estrategias-de-cobranza-preventiva/  301
+/blog/cobro-de-facturas/                                        /blog/facturas-impagas/       301
+/blog/servicio-integral-de-cobranza/                            /cobranza-prejudicial/        301
+/blog/que-es-un-emprendedor/                                    /mundo-pymes/                 301
+/blog/como-cobrar-una-factura-impaga/                           /blog/como-cobrar-facturas-impagas/  301
+/blog/cobranza-judicial-en-chile/                               /cobranza-judicial/           301
+/blog/pago-de-cuentas/                                          /blog/facturas-impagas/       301
+/blog/cobro-de-facturas-impagas/                                /blog/facturas-impagas/       301
+/auditoria-de-ventas/                                           /servicios-call-center/       301
+/nosotros/                                                      /                             301
+/blog/gestion/                                                  /blog/gestion-de-cobranza/    301
+/blog/cobranzas-extrajudiciales/                                /blog/cobranza-extrajudicial/ 301
+/blog/factura/                                                  /blog/facturas-impagas/       301
+/blog/empresas-de-cobranza/                                     /empresa-de-cobranza-en-santiago/  301
+/blog/pymes-en-chile/                                           /mundo-pymes/                 301
+/blog/ejecutivo/                                                /blog/ejecutivo-de-cobranzas/ 301
+/blog/facturas-vencidas/                                        /blog/facturas-impagas/       301
+/blog/plan-empresas/                                            /mundo-pymes/                 301
+/blog/canales-de-comunicacion/                                  /blog/comunicacion-efectiva/  301
+/blog/cobranza-de-facturas-impagas/                             /blog/facturas-impagas/       301
+/blog/factura-electronica/                                      /blog/facturas-impagas/       301
+/prospeccion-comercial/                                         /blog/prospeccion-comercial/  301
+/prospeccion-de-ventas/                                         /blog/prospeccion-comercial/  301
+/blog/contactabilidad/                                          /blog/comunicacion-efectiva/  301
+/blog/empresa-pequena/                                          /mundo-pymes/                 301
+/blog/microempresas/                                            /mundo-pymes/                 301
+/blog/apoyo-a-pymes/                                            /mundo-pymes/                 301
+/blog/planes-pymes/                                             /mundo-pymes/                 301
+/category/blog/                                                 /blog/                        301
