@@ -3349,3 +3349,24 @@ body{
     .cta-final p{ font-size:15px; }
     .floating-wsp{ bottom:16px;right:16px;width:54px;height:54px;font-size:26px; }
 }
+
+/* =========================
+   RECAPTCHA BADGE OCULTO
+   (badge visual escondido para no chocar con el boton flotante
+   de WhatsApp; el aviso legal requerido por Google se muestra
+   como texto junto a cada formulario, ver .recaptcha-disclaimer)
+========================= */
+.grecaptcha-badge{
+    visibility:hidden !important;
+}
+.recaptcha-disclaimer{
+    font-size:11px;
+    line-height:1.5;
+    color:#9a9a9a;
+    margin-top:10px;
+    text-align:center;
+}
+.recaptcha-disclaimer a{
+    color:#9a9a9a;
+    text-decoration:underline;
+}
