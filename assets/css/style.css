@@ -627,7 +627,8 @@ body{
     border-radius:24px;
     display:block;
     object-fit:cover;
-    aspect-ratio:16/9;
+    object-position:center;
+    aspect-ratio:16/5.85;
     min-height:0;
 }
 
