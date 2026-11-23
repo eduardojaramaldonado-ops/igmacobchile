@@ -629,7 +629,7 @@ body{
     display:block;
     object-fit:cover;
     object-position:center;
-    aspect-ratio:16/5.85;
+    aspect-ratio:16/7.3125;
     min-height:0;
 }
 
