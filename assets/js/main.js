@@ -4,6 +4,8 @@ let current = 0;
 
 function changeSlide(){
 
+    if(!slides.length) return;
+
     slides[current].classList.remove('active');
 
     current++;
@@ -16,7 +18,9 @@ function changeSlide(){
 
 }
 
-setInterval(changeSlide, 5000);
+if(slides.length){
+    setInterval(changeSlide, 5000);
+}
 
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
@@ -136,3 +140,46 @@ faqItems.forEach(item => {
     });
 
 });
+
+/* RECAPTCHA DIFERIDO: se carga solo cuando el formulario entra en viewport
+   o el usuario interactúa con él, en vez de en cada carga de página */
+(function(){
+
+    const forms = document.querySelectorAll('.landing-form, #form-web');
+
+    if(!forms.length) return;
+
+    let loaded = false;
+
+    function loadRecaptcha(){
+        if(loaded) return;
+        loaded = true;
+        const s = document.createElement('script');
+        s.src = 'https://www.google.com/recaptcha/api.js';
+        s.async = true;
+        s.defer = true;
+        document.head.appendChild(s);
+    }
+
+    if('IntersectionObserver' in window){
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    loadRecaptcha();
+                    observer.disconnect();
+                }
+            });
+        }, { rootMargin: '400px' });
+        forms.forEach(f => observer.observe(f));
+    } else {
+        loadRecaptcha();
+    }
+
+    document.addEventListener('focusin', function onFirstFocus(e){
+        if(e.target.closest('.landing-form, #form-web')){
+            loadRecaptcha();
+            document.removeEventListener('focusin', onFirstFocus);
+        }
+    });
+
+})();

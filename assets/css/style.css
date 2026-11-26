@@ -164,7 +164,7 @@ body{
     text-align:left;
 }
 
-.slide-content h2{
+.slide-content .slide-title{
     font-family:'Montserrat', 'Inter', sans-serif;
     font-size:46px;
     line-height:1.05;
@@ -209,7 +209,7 @@ body{
         padding:0 20px;
     }
 
-    .slide-content h2{
+    .slide-content .slide-title{
         font-size:42px;
     }
 
@@ -227,7 +227,7 @@ body{
         padding-right:20px;
     }
 
-    .slide-content h2{
+    .slide-content .slide-title{
         font-size:32px;
         line-height:1.1;
     }
@@ -1821,7 +1821,8 @@ body{
 
 .breadcrumb li{
     font-size:13px;
-    color:rgba(255,255,255,0.5);
+    color:rgba(255,255,255,0.85);
+    text-shadow:0 1px 4px rgba(0,0,0,0.25);
     display:flex;
     align-items:center;
     gap:6px;
@@ -1837,7 +1838,8 @@ body{
 }
 
 .breadcrumb a{
-    color:rgba(255,255,255,0.55);
+    color:rgba(255,255,255,0.85);
+    text-shadow:0 1px 4px rgba(0,0,0,0.25);
     text-decoration:none;
     transition:color 0.2s;
 }
@@ -3364,11 +3366,11 @@ body{
 .recaptcha-disclaimer{
     font-size:11px;
     line-height:1.5;
-    color:#9a9a9a;
+    color:#666666;
     margin-top:10px;
     text-align:center;
 }
 .recaptcha-disclaimer a{
-    color:#9a9a9a;
+    color:#666666;
     text-decoration:underline;
 }
